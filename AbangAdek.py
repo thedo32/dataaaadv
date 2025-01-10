@@ -419,7 +419,7 @@ fig_country = px.choropleth(
     color='visit_count',
     hover_name='country',
     color_continuous_scale='Viridis',
-    title="Visit Distribution by Country",
+    title="Peta Kunjungan Menurut Negara",
 )
 
 fig_country.update_geos(showcoastlines=True, coastlinecolor="LightGray")
