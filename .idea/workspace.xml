@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b9dbd861-4fc9-4c9b-b3d4-5342b9fc9a2a" name="Changes" comment="update 2024-12-31" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;thedo32&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/thedo32/dataabangadek&quot;,
+    &quot;accountId&quot;: &quot;eb3e31ed-9fdb-44da-be68-242901cec7f5&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="2qvgWB84ukZOEeQnQC0COsKZDJp" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.Hits.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "dart.analysis.tool.window.visible": "false",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/Users/jeffr/PycharmProjects/dataaaadv",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\jeffr\PycharmProjects\BatigoStreamlit" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-495700d161d3-aa17d162503b-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-243.22562.220" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b9dbd861-4fc9-4c9b-b3d4-5342b9fc9a2a" name="Changes" comment="" />
+      <created>1735548492601</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1735548492601</updated>
+    </task>
+    <task id="LOCAL-00001" summary="update 2024-12-31">
+      <option name="closed" value="true" />
+      <created>1735581691441</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1735581691442</updated>
+    </task>
+    <task id="LOCAL-00002" summary="update 2024-12-31">
+      <option name="closed" value="true" />
+      <created>1735582023985</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1735582023985</updated>
+    </task>
+    <task id="LOCAL-00003" summary="update 2024-12-31">
+      <option name="closed" value="true" />
+      <created>1735582983430</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1735582983430</updated>
+    </task>
+    <task id="LOCAL-00004" summary="update 2024-12-31">
+      <option name="closed" value="true" />
+      <created>1735583054990</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1735583054990</updated>
+    </task>
+    <task id="LOCAL-00005" summary="update 2024-12-31">
+      <option name="closed" value="true" />
+      <created>1735583332527</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1735583332527</updated>
+    </task>
+    <task id="LOCAL-00006" summary="update 2024-12-31">
+      <option name="closed" value="true" />
+      <created>1735584155816</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1735584155816</updated>
+    </task>
+    <task id="LOCAL-00007" summary="update 2024-12-31">
+      <option name="closed" value="true" />
+      <created>1735584223148</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1735584223148</updated>
+    </task>
+    <task id="LOCAL-00008" summary="update 2024-12-31">
+      <option name="closed" value="true" />
+      <created>1735584356010</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1735584356010</updated>
+    </task>
+    <task id="LOCAL-00009" summary="update 2024-12-31">
+      <option name="closed" value="true" />
+      <created>1735584424715</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1735584424715</updated>
+    </task>
+    <task id="LOCAL-00010" summary="update 2024-12-31">
+      <option name="closed" value="true" />
+      <created>1735617958707</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1735617958707</updated>
+    </task>
+    <task id="LOCAL-00011" summary="update 2024-12-31">
+      <option name="closed" value="true" />
+      <created>1735618347457</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1735618347457</updated>
+    </task>
+    <task id="LOCAL-00012" summary="update 2024-12-31">
+      <option name="closed" value="true" />
+      <created>1735618428957</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1735618428957</updated>
+    </task>
+    <task id="LOCAL-00013" summary="update 2024-12-31">
+      <option name="closed" value="true" />
+      <created>1735618479638</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1735618479639</updated>
+    </task>
+    <task id="LOCAL-00014" summary="update 2024-12-31">
+      <option name="closed" value="true" />
+      <created>1735618692889</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1735618692889</updated>
+    </task>
+    <task id="LOCAL-00015" summary="update 2024-12-31">
+      <option name="closed" value="true" />
+      <created>1735618707366</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1735618707366</updated>
+    </task>
+    <task id="LOCAL-00016" summary="update 2024-12-31">
+      <option name="closed" value="true" />
+      <created>1735621903629</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1735621903629</updated>
+    </task>
+    <task id="LOCAL-00017" summary="update 2024-12-31">
+      <option name="closed" value="true" />
+      <created>1735876807272</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1735876807272</updated>
+    </task>
+    <task id="LOCAL-00018" summary="update 2024-12-31">
+      <option name="closed" value="true" />
+      <created>1736233001799</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1736233001800</updated>
+    </task>
+    <task id="LOCAL-00019" summary="update 2024-12-31">
+      <option name="closed" value="true" />
+      <created>1736309655529</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1736309655530</updated>
+    </task>
+    <task id="LOCAL-00020" summary="update 2024-12-31">
+      <option name="closed" value="true" />
+      <created>1736393572232</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1736393572233</updated>
+    </task>
+    <task id="LOCAL-00021" summary="update 2024-12-31">
+      <option name="closed" value="true" />
+      <created>1736409110892</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1736409110892</updated>
+    </task>
+    <task id="LOCAL-00022" summary="update 2024-12-31">
+      <option name="closed" value="true" />
+      <created>1736415727147</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1736415727147</updated>
+    </task>
+    <task id="LOCAL-00023" summary="update 2024-12-31">
+      <option name="closed" value="true" />
+      <created>1736419347509</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1736419347509</updated>
+    </task>
+    <task id="LOCAL-00024" summary="update 2024-12-31">
+      <option name="closed" value="true" />
+      <created>1736421591209</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1736421591209</updated>
+    </task>
+    <task id="LOCAL-00025" summary="update 2024-12-31">
+      <option name="closed" value="true" />
+      <created>1736426028980</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1736426028982</updated>
+    </task>
+    <task id="LOCAL-00026" summary="update 2024-12-31">
+      <option name="closed" value="true" />
+      <created>1736432678075</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1736432678075</updated>
+    </task>
+    <task id="LOCAL-00027" summary="update 2024-12-31">
+      <option name="closed" value="true" />
+      <created>1736432688586</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1736432688586</updated>
+    </task>
+    <task id="LOCAL-00028" summary="update 2024-12-31">
+      <option name="closed" value="true" />
+      <created>1736436374067</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1736436374067</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$" />
+    </ignored-roots>
+    <MESSAGE value="update 2024-12-31" />
+    <option name="LAST_COMMIT_MESSAGE" value="update 2024-12-31" />
+  </component>
+</project>

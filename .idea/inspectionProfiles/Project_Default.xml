@@ -1,0 +1,60 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="HtmlUnknownTag" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="myValues">
+        <value>
+          <list size="7">
+            <item index="0" class="java.lang.String" itemvalue="nobr" />
+            <item index="1" class="java.lang.String" itemvalue="noembed" />
+            <item index="2" class="java.lang.String" itemvalue="comment" />
+            <item index="3" class="java.lang.String" itemvalue="noscript" />
+            <item index="4" class="java.lang.String" itemvalue="embed" />
+            <item index="5" class="java.lang.String" itemvalue="script" />
+            <item index="6" class="java.lang.String" itemvalue="center" />
+          </list>
+        </value>
+      </option>
+      <option name="myCustomValuesEnabled" value="true" />
+    </inspection_tool>
+    <inspection_tool class="PyCompatibilityInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ourVersions">
+        <value>
+          <list size="10">
+            <item index="0" class="java.lang.String" itemvalue="2.7" />
+            <item index="1" class="java.lang.String" itemvalue="3.12" />
+            <item index="2" class="java.lang.String" itemvalue="3.5" />
+            <item index="3" class="java.lang.String" itemvalue="3.6" />
+            <item index="4" class="java.lang.String" itemvalue="3.7" />
+            <item index="5" class="java.lang.String" itemvalue="3.8" />
+            <item index="6" class="java.lang.String" itemvalue="3.9" />
+            <item index="7" class="java.lang.String" itemvalue="3.10" />
+            <item index="8" class="java.lang.String" itemvalue="3.13" />
+            <item index="9" class="java.lang.String" itemvalue="3.11" />
+          </list>
+        </value>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyPackageRequirementsInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredPackages">
+        <value>
+          <list size="13">
+            <item index="0" class="java.lang.String" itemvalue="matplotlib" />
+            <item index="1" class="java.lang.String" itemvalue="streamlit-option-menu" />
+            <item index="2" class="java.lang.String" itemvalue="streamlit-antd-components" />
+            <item index="3" class="java.lang.String" itemvalue="streamlit-folium" />
+            <item index="4" class="java.lang.String" itemvalue="pygwalker" />
+            <item index="5" class="java.lang.String" itemvalue="streamlit-plotly-mapboxEvents" />
+            <item index="6" class="java.lang.String" itemvalue="streamlit-float" />
+            <item index="7" class="java.lang.String" itemvalue="streamlit" />
+            <item index="8" class="java.lang.String" itemvalue="plotly" />
+            <item index="9" class="java.lang.String" itemvalue="plotly-express" />
+            <item index="10" class="java.lang.String" itemvalue="streamlit_js_eval" />
+            <item index="11" class="java.lang.String" itemvalue="osmnx" />
+            <item index="12" class="java.lang.String" itemvalue="mysql_connector_repackaged" />
+          </list>
+        </value>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>
