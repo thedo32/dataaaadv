@@ -25,7 +25,7 @@ urluser = "https://restful.abangadek-adv.com/users"
 urlhit = "https://restful.abangadek-adv.com/hits"
 
 
-st.markdown("<h1 style='text-align: center;'>Analisa Data Kopi Batigo</h1>",unsafe_allow_html=True)
+st.markdown("<h1 style='text-align: center;'>Analisa Data Abang Adek Advertising</h1>",unsafe_allow_html=True)
 
 with st.expander("Ekspor Data Ke CSV"):
     # Dropdown to select the data to export
