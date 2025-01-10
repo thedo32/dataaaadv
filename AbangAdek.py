@@ -12,7 +12,7 @@ from itables.streamlit import interactive_table
 
 
 st.set_page_config(
-    page_title="Batigo Data Analisis",
+    page_title="Abang Adek Data Analisis",
     page_icon="fishtail.png",
     layout="wide",
     menu_items={"About": """##### Batigo Data Analisis. 
