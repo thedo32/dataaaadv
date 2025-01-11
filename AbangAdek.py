@@ -7,6 +7,7 @@ import fungsiumum as fu
 from datetime import datetime
 from geopy.geocoders import Nominatim
 import requests
+import json
 
 from itables.streamlit import interactive_table
 
@@ -288,30 +289,6 @@ with (tab1):
 
     selection = alt.selection_point(fields=['country'], bind='legend')
 
-    bars = alt.Chart(df).mark_bar(size=6).encode(
-        x=alt.X(
-            "city:N",
-            title="Nama Kota",
-            axis=alt.Axis(labelAngle=90),
-            sort=alt.EncodingSortField(field="id", op="count", order="descending")
-        ),
-        y=alt.Y("count(id):Q", title="Jumlah Kunjungan"),  # Count occurrences by city
-        xOffset=alt.X("country:N", title="Country"),  # Group by country
-        color=alt.Color(
-            "country:N",
-            title="Negara",
-            scale=alt.Scale(domain=all_countries),  # Explicitly set domain
-            legend=alt.Legend(title="Pilih Negara")
-        ),  # Different colors for each country
-        tooltip=["country", "city", "count(id)"]  # Add tooltips for interactivity
-    ).add_params(selection).transform_filter(selection).properties(
-        height=800,
-        width=1200
-    ).interactive(bind_x=True, bind_y=True)
-
-    st.altair_chart(bars)
-
-    st.divider()
 
     df = df.copy()
     df['trunc_city'] = df['city'].apply(lambda x: x if len(x) <= 10 else x[:10] + '...')
@@ -403,82 +380,158 @@ with (tab1):
 
         st.altair_chart(bars)
 
+    with st.expander("Tampilkan Data Seluruh Negara"):
+        with st.container():
+            bars = alt.Chart(df).mark_bar(size=6).encode(
+                x=alt.X(
+                    "city:N",
+                    title="Nama Kota",
+                    axis=alt.Axis(labelAngle=90),
+                    sort=alt.EncodingSortField(field="id", op="count", order="descending")
+                ),
+                y=alt.Y("count(id):Q", title="Jumlah Kunjungan"),  # Count occurrences by city
+                xOffset=alt.X("country:N", title="Country"),  # Group by country
+                color=alt.Color(
+                    "country:N",
+                    title="Negara",
+                    scale=alt.Scale(domain=all_countries),  # Explicitly set domain
+                    legend=alt.Legend(title="Pilih Negara")
+                ),  # Different colors for each country
+                tooltip=["country", "city", "count(id)"]  # Add tooltips for interactivity
+            ).add_params(selection).transform_filter(selection).properties(
+                height=800,
+                width=1200
+            ).interactive(bind_x=True, bind_y=True)
+
+            st.altair_chart(bars, use_container_width=True)
+
 st.divider()
 
 # Geographic Heatmap by Country
-st.markdown("## Trends Secara Geografis: Analisa Menurut Negara")
+st.markdown("#### Trends Secara Geografis: Analisa Menurut Negara")
 
 # Aggregate visit data by country and city
 country_visits = dfh.groupby('country').size().reset_index(name='visit_count')
 city_visits = dfh.groupby(['country', 'city']).size().reset_index(name='visit_count')
 
+
+# # Load GeoJSON for country polygons (example file: can be replaced with an actual GeoJSON URL)
+# geojson_url = "https://raw.githubusercontent.com/johan/world.geo.json/master/countries.geo.json"
+# # with open('path_to_geojson_file.geojson', 'r') as file:
+# #     geojson_data = json.load(file)
+
+
+# # Match country names with GeoJSON property
+# fig_country = px.choropleth_mapbox(
+#     country_visits,
+#     geojson=geojson_url,
+#     locations='country',
+#     featureidkey='properties.name',  # Match with GeoJSON country names
+#     color='visit_count',
+#     hover_name='country',
+#     color_continuous_scale='Spectral',
+#     title="Peta Kunjungan Menurut Negara",
+#     zoom=2,
+#     center={"lat": -0.789275, "lon": 113.921327},  # Center map
+# )
+#
+# # Update layout for map style and controls
+# fig_country.update_layout(
+#     mapbox=dict(
+#         style="carto-darkmatter",
+#         center={"lat": -0.789275, "lon": 113.921327},
+#         zoom=2,
+#     ),
+#     margin={"r": 0, "t": 0, "l": 0, "b": 0},  # Adjust margins for clean fit
+# )
+#
+# # Display map in Streamlit
+# st.plotly_chart(fig_country, use_container_width=True)
+
+# Create a choropleth
 fig_country = px.choropleth(
     country_visits,
-    width= 1200,
-    height =800,
     locations='country',
-    locationmode='country names',
+    locationmode='country names',  # Directly use country names
     color='visit_count',
     hover_name='country',
+    title=None,
     color_continuous_scale='Viridis',
-    title="Peta Kunjungan Menurut Negara",
+    width=1200,
+    height=800,
 )
 
-fig_country.update_geos(showcoastlines=True, coastlinecolor="LightGray")
-st.plotly_chart(fig_country)
+# Update geos for dark theme
+fig_country.update_geos(
+    showcoastlines=False,
+    #coastlinecolor="black",
+    landcolor="#1a1a1a",  # Darker background color
+    oceancolor="#2a2a2a",  # Dark grayish-blue ocean color
+    showland=True,
+    showocean=True,
+    projection_scale=4,  # Scale for zoom effect
+    center={"lat": -0.789275, "lon": 113.921327},  # Center the map
+)
+
+# Update layout for dark background
+# fig_country.update_layout(
+#     #paper_bgcolor="black",  # Background of the chart
+#     #plot_bgcolor="black",  # Background of the plot
+#     font=dict(color="white"),  # Font color
+#     title_font=dict(size=20, color="white"),  # Title font styling
+#     margin=dict(t=0, b=0, l=0, r=0)  # Remove all padding (set margins to 0)
+# )
+
+# Display map in Streamlit
+st.plotly_chart(fig_country, use_container_width=True)
+
 
 # Geographic Heatmap by City
-# st.markdown("## Trends Secara Geografis: Analisa Menurut Kota")
-#
-#
-# def get_lat_lon(city):
-#     url = f"https://nominatim.openstreetmap.org/search?q={city}&format=json"
-#     response = requests.get(url, headers={"User-Agent": "geo-app"})
-#     data = response.json()
-#     if data:
-#         return float(data[0]['lat']), float(data[0]['lon'])
-#     return None, None
-#
-# cities = dfh['city']
-# results = {'city': [], 'latitude': [], 'longitude': []}
-#
-# for city in cities:
-#     lat, lon = get_lat_lon(city)
-#     results['city'].append(city)
-#     results['latitude'].append(lat)
-#     results['longitude'].append(lon)
-#
-# df = pd.DataFrame(results)
-# df.to_csv('city_geolocation.csv', index=False)
-#
-# # Load pre-fetched geolocation data
-# geolocation_data = pd.read_csv("city_geolocation.csv")
-# dfh = dfh.merge(geolocation_data, on='city', how='left')
-#
-# # Fill missing coordinates with placeholders if needed
-# dfh['latitude'] = dfh['latitude'].fillna(0)  # Replace with a meaningful default
-# dfh['longitude'] = dfh['longitude'].fillna(0)
-#
-# # Merge with city-level visit data and visualize
-# city_visits = city_visits.merge(
-#     dfh[['city', 'latitude', 'longitude']].drop_duplicates(),
-#     on='city',
-#     how='left'
-# )
-#
-# fig_city = px.scatter_geo(
-#     city_visits,
-#     lat='latitude',
-#     lon='longitude',
-#     text='city',
-#     size='visit_count',
-#     color='visit_count',
-#     hover_name='city',
-#     title="Visit Distribution by City",
-#     color_continuous_scale='Viridis',
-# )
-# fig_city.update_geos(showcoastlines=True, coastlinecolor="LightGray")
-# st.plotly_chart(fig_city, use_container_width=True)
+st.markdown("#### Trends Secara Geografis: Analisa Menurut Kota")
+
+# Fill missing coordinates with placeholders if needed
+dfh['lat'] = dfh['lat'].fillna(0)  # Replace with a meaningful default
+dfh['long'] = dfh['lon'].fillna(0)
+
+#make sure coordinate is numeric
+dfh['lat'] = pd.to_numeric(dfh['lat'], errors='coerce')
+dfh['lon'] = pd.to_numeric(dfh['lon'], errors='coerce')
+
+
+# Merge with city-level visit data and visualize
+city_visits = city_visits.merge(
+    dfh[['city', 'lat', 'lon']].drop_duplicates(),
+    on='city',
+    how='left'
+)
+
+# Create scatter_mapbox
+fig_city = px.scatter_mapbox(
+    city_visits,
+    lat='lat',
+    lon='lon',
+    text='city',
+    size='visit_count',
+    color='visit_count',
+    hover_name='city',
+    color_continuous_scale='Tropic',
+    width=1200,
+    height=650,
+)
+
+# Update layout to center the map and show controls
+fig_city.update_layout(
+    mapbox=dict(
+        style='carto-darkmatter',
+        center=dict(lat=-0.789275, lon=113.921327),  # Center map to specified lat/lon
+        zoom=3.1,
+    ),
+    # margin={"r":0,"t":0,"l":0,"b":0},  # Optional: Adjust margins for better fit
+    showlegend=True,  # Ensure legend is visible if applicable
+)
+
+# Show the map using Streamlit
+st.plotly_chart(fig_city, use_container_width=True)
 
 
 #kunjungan per halaman
