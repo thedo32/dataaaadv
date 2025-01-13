@@ -405,133 +405,132 @@ with (tab1):
 
             st.altair_chart(bars, use_container_width=True)
 
-st.divider()
+    st.divider()
 
-# Geographic Heatmap by Country
-st.markdown("#### Trends Secara Geografis: Analisa Menurut Negara")
+    #still in tab1
+    # Geographic Heatmap by Country
+    st.markdown("#### Trends Secara Geografis: Analisa Menurut Negara")
 
-# Aggregate visit data by country and city
-country_visits = dfh.groupby('country').size().reset_index(name='visit_count')
-city_visits = dfh.groupby(['country', 'city']).size().reset_index(name='visit_count')
+    # Aggregate visit data by country and city
+    country_visits = dfh.groupby('country').size().reset_index(name='visit_count')
+    city_visits = dfh.groupby(['country', 'city']).size().reset_index(name='visit_count')
+
+    # # Load GeoJSON for country polygons (example file: can be replaced with an actual GeoJSON URL)
+    # geojson_url = "https://raw.githubusercontent.com/johan/world.geo.json/master/countries.geo.json"
+    # # with open('path_to_geojson_file.geojson', 'r') as file:
+    # #     geojson_data = json.load(file)
+
+    # # Match country names with GeoJSON property
+    # fig_country = px.choropleth_mapbox(
+    #     country_visits,
+    #     geojson=geojson_url,
+    #     locations='country',
+    #     featureidkey='properties.name',  # Match with GeoJSON country names
+    #     color='visit_count',
+    #     hover_name='country',
+    #     color_continuous_scale='Spectral',
+    #     title="Peta Kunjungan Menurut Negara",
+    #     zoom=2,
+    #     center={"lat": -0.789275, "lon": 113.921327},  # Center map
+    # )
+    #
+    # # Update layout for map style and controls
+    # fig_country.update_layout(
+    #     mapbox=dict(
+    #         style="carto-darkmatter",
+    #         center={"lat": -0.789275, "lon": 113.921327},
+    #         zoom=2,
+    #     ),
+    #     margin={"r": 0, "t": 0, "l": 0, "b": 0},  # Adjust margins for clean fit
+    # )
+    #
+    # # Display map in Streamlit
+    # st.plotly_chart(fig_country, use_container_width=True)
+
+    # Create a choropleth
+    fig_country = px.choropleth(
+        country_visits,
+        locations='country',
+        locationmode='country names',  # Directly use country names
+        color='visit_count',
+        hover_name='country',
+        title=None,
+        color_continuous_scale='Viridis',
+        width=1200,
+        height=800,
+    )
+
+    # Update geos for dark theme
+    fig_country.update_geos(
+        showcoastlines=False,
+        # coastlinecolor="black",
+        landcolor="#1a1a1a",  # Darker background color
+        oceancolor="#2a2a2a",  # Dark grayish-blue ocean color
+        showland=True,
+        showocean=True,
+        projection_scale=4,  # Scale for zoom effect
+        center={"lat": -0.789275, "lon": 113.921327},  # Center the map
+    )
+
+    # Update layout for dark background
+    # fig_country.update_layout(
+    #     #paper_bgcolor="black",  # Background of the chart
+    #     #plot_bgcolor="black",  # Background of the plot
+    #     font=dict(color="white"),  # Font color
+    #     title_font=dict(size=20, color="white"),  # Title font styling
+    #     margin=dict(t=0, b=0, l=0, r=0)  # Remove all padding (set margins to 0)
+    # )
+
+    # Display map in Streamlit
+    st.plotly_chart(fig_country, use_container_width=True)
+
+    # Geographic Heatmap by City
+    st.markdown("#### Trends Secara Geografis: Analisa Menurut Kota")
+
+    # Fill missing coordinates with placeholders if needed
+    dfh['lat'] = dfh['lat'].fillna(0)  # Replace with a meaningful default
+    dfh['long'] = dfh['lon'].fillna(0)
+
+    # make sure coordinate is numeric
+    dfh['lat'] = pd.to_numeric(dfh['lat'], errors='coerce')
+    dfh['lon'] = pd.to_numeric(dfh['lon'], errors='coerce')
+
+    # Merge with city-level visit data and visualize
+    city_visits = city_visits.merge(
+        dfh[['city', 'lat', 'lon']].drop_duplicates(),
+        on='city',
+        how='left'
+    )
+
+    # Create scatter_mapbox
+    fig_city = px.scatter_mapbox(
+        city_visits,
+        lat='lat',
+        lon='lon',
+        text='city',
+        size='visit_count',
+        color='visit_count',
+        hover_name='city',
+        color_continuous_scale='Tropic',
+        width=1200,
+        height=650,
+    )
+
+    # Update layout to center the map and show controls
+    fig_city.update_layout(
+        mapbox=dict(
+            style='carto-darkmatter',
+            center=dict(lat=-0.789275, lon=113.921327),  # Center map to specified lat/lon
+            zoom=3.1,
+        ),
+        # margin={"r":0,"t":0,"l":0,"b":0},  # Optional: Adjust margins for better fit
+        showlegend=True,  # Ensure legend is visible if applicable
+    )
+
+    # Show the map using Streamlit
+    st.plotly_chart(fig_city, use_container_width=True)
 
 
-# # Load GeoJSON for country polygons (example file: can be replaced with an actual GeoJSON URL)
-# geojson_url = "https://raw.githubusercontent.com/johan/world.geo.json/master/countries.geo.json"
-# # with open('path_to_geojson_file.geojson', 'r') as file:
-# #     geojson_data = json.load(file)
-
-
-# # Match country names with GeoJSON property
-# fig_country = px.choropleth_mapbox(
-#     country_visits,
-#     geojson=geojson_url,
-#     locations='country',
-#     featureidkey='properties.name',  # Match with GeoJSON country names
-#     color='visit_count',
-#     hover_name='country',
-#     color_continuous_scale='Spectral',
-#     title="Peta Kunjungan Menurut Negara",
-#     zoom=2,
-#     center={"lat": -0.789275, "lon": 113.921327},  # Center map
-# )
-#
-# # Update layout for map style and controls
-# fig_country.update_layout(
-#     mapbox=dict(
-#         style="carto-darkmatter",
-#         center={"lat": -0.789275, "lon": 113.921327},
-#         zoom=2,
-#     ),
-#     margin={"r": 0, "t": 0, "l": 0, "b": 0},  # Adjust margins for clean fit
-# )
-#
-# # Display map in Streamlit
-# st.plotly_chart(fig_country, use_container_width=True)
-
-# Create a choropleth
-fig_country = px.choropleth(
-    country_visits,
-    locations='country',
-    locationmode='country names',  # Directly use country names
-    color='visit_count',
-    hover_name='country',
-    title=None,
-    color_continuous_scale='Viridis',
-    width=1200,
-    height=800,
-)
-
-# Update geos for dark theme
-fig_country.update_geos(
-    showcoastlines=False,
-    #coastlinecolor="black",
-    landcolor="#1a1a1a",  # Darker background color
-    oceancolor="#2a2a2a",  # Dark grayish-blue ocean color
-    showland=True,
-    showocean=True,
-    projection_scale=4,  # Scale for zoom effect
-    center={"lat": -0.789275, "lon": 113.921327},  # Center the map
-)
-
-# Update layout for dark background
-# fig_country.update_layout(
-#     #paper_bgcolor="black",  # Background of the chart
-#     #plot_bgcolor="black",  # Background of the plot
-#     font=dict(color="white"),  # Font color
-#     title_font=dict(size=20, color="white"),  # Title font styling
-#     margin=dict(t=0, b=0, l=0, r=0)  # Remove all padding (set margins to 0)
-# )
-
-# Display map in Streamlit
-st.plotly_chart(fig_country, use_container_width=True)
-
-
-# Geographic Heatmap by City
-st.markdown("#### Trends Secara Geografis: Analisa Menurut Kota")
-
-# Fill missing coordinates with placeholders if needed
-dfh['lat'] = dfh['lat'].fillna(0)  # Replace with a meaningful default
-dfh['long'] = dfh['lon'].fillna(0)
-
-#make sure coordinate is numeric
-dfh['lat'] = pd.to_numeric(dfh['lat'], errors='coerce')
-dfh['lon'] = pd.to_numeric(dfh['lon'], errors='coerce')
-
-
-# Merge with city-level visit data and visualize
-city_visits = city_visits.merge(
-    dfh[['city', 'lat', 'lon']].drop_duplicates(),
-    on='city',
-    how='left'
-)
-
-# Create scatter_mapbox
-fig_city = px.scatter_mapbox(
-    city_visits,
-    lat='lat',
-    lon='lon',
-    text='city',
-    size='visit_count',
-    color='visit_count',
-    hover_name='city',
-    color_continuous_scale='Tropic',
-    width=1200,
-    height=650,
-)
-
-# Update layout to center the map and show controls
-fig_city.update_layout(
-    mapbox=dict(
-        style='carto-darkmatter',
-        center=dict(lat=-0.789275, lon=113.921327),  # Center map to specified lat/lon
-        zoom=3.1,
-    ),
-    # margin={"r":0,"t":0,"l":0,"b":0},  # Optional: Adjust margins for better fit
-    showlegend=True,  # Ensure legend is visible if applicable
-)
-
-# Show the map using Streamlit
-st.plotly_chart(fig_city, use_container_width=True)
 
 
 #kunjungan per halaman
@@ -710,6 +709,108 @@ with tab2:
         ).interactive(bind_x=True, bind_y=True)
 
         st.altair_chart(bars)
+
+    st.divider()
+
+    # still in tab1
+    # Geographic Heatmap by Country
+    st.markdown("#### Trends Secara Geografis: Analisa Menurut Negara")
+
+    # Aggregate visit data by country and city
+    country_visits = dfh.groupby('country').size().reset_index(name='visit_count')
+    city_visits = dfh.groupby(['country', 'city']).size().reset_index(name='visit_count')
+
+    # Create a choropleth
+    fig_country = px.choropleth(
+        country_visits,
+        locations='country',
+        locationmode='country names',  # Directly use country names
+        color='visit_count',
+        hover_name='country',
+        title=None,
+        color_continuous_scale='Viridis',
+        width=1200,
+        height=800,
+    )
+
+    # Update geos for dark theme
+    fig_country.update_geos(
+        showcoastlines=False,
+        # coastlinecolor="black",
+        landcolor="#1a1a1a",  # Darker background color
+        oceancolor="#2a2a2a",  # Dark grayish-blue ocean color
+        showland=True,
+        showocean=True,
+        projection_scale=4,  # Scale for zoom effect
+        center={"lat": -0.789275, "lon": 113.921327},  # Center the map
+    )
+
+    # Display map in Streamlit
+    st.plotly_chart(fig_country, use_container_width=True, key=123)
+
+    # Geographic Heatmap by City
+    st.markdown("#### Trends Secara Geografis: Analisa Menurut Kota")
+
+    # Fill missing coordinates with placeholders if needed
+    dfh['lat'] = dfh['lat'].fillna(0)  # Replace with a meaningful default
+    dfh['long'] = dfh['lon'].fillna(0)
+
+    # make sure coordinate is numeric
+    dfh['lat'] = pd.to_numeric(dfh['lat'], errors='coerce')
+    dfh['lon'] = pd.to_numeric(dfh['lon'], errors='coerce')
+
+    # Fill missing values
+    dfh['lat'] = dfh['lat'].fillna(0)  # Replace 0 with a meaningful default
+    dfh['lon'] = dfh['lon'].fillna(0)
+
+    # Merge title and coordinates into city_visits
+    city_visits = city_visits.merge(
+        dfh[['city', 'title', 'lat', 'lon']].drop_duplicates(),
+        on='city',
+        how='left'
+    )
+
+    # Create a dropdown to select a title
+    unique_titles = city_visits['title'].unique()
+    selected_title = st.selectbox("Pilih Halaman Yang Dikunjungi", options=unique_titles, index=0)
+
+    # Filter data based on the selected title
+    filtered_data = city_visits[city_visits['title'] == selected_title]
+
+    # Group by city and calculate visit_count for the selected title
+    filtered_grouped = filtered_data.groupby(['city']).agg({
+        'visit_count': 'sum',
+        'lat': 'first',
+        'lon': 'first'
+    }).reset_index()
+
+    # Create scatter_mapbox
+    fig_city = px.scatter_mapbox(
+        filtered_grouped,
+        lat='lat',
+        lon='lon',
+        size='visit_count',
+        text='city',
+        hover_name='city',
+        hover_data={'visit_count': True},
+        color='visit_count',  # Color represents visit count
+        color_continuous_scale='Tropic',
+        width=1200,
+        height=650
+    )
+
+    # Update layout
+    fig_city.update_layout(
+        mapbox=dict(
+            style='carto-darkmatter',
+            center=dict(lat=-0.789275, lon=113.921327),  # Center map
+            zoom=3.1,
+        ),
+        showlegend=True
+    )
+
+    # Show map in Streamlit
+    st.plotly_chart(fig_city, use_container_width=True,key=12345)
 
 #kunjungan per wilayah
 
