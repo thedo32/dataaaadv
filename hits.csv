@@ -2,6 +2,16 @@ id,user_id,title,ip_address,referrer,agent,utm_source,utm_medium,hit_time,city,c
 7791,0,Home,31.171.152.134,https://abangadek-adv.com/,Chrome 68.0.3440.106,,,2024-12-09T06:34:07.000Z,Other,Albania,40.99750,20.01240
 7792,0,Tentang Kami,31.171.152.134,https://abangadek-adv.com/about,Chrome 68.0.3440.106,,,2024-12-09T06:34:08.000Z,Other,Albania,40.99750,20.01240
 5239,0,Interior,181.118.183.166,,Chrome 125.0.6422.41,,,2024-10-30T04:31:24.000Z,Justiniano Posse,Argentina,-32.88470,-62.67130
+9832,0,Home,45.132.224.31,,Chrome 114.0.0.0,,,2025-01-12T14:28:45.000Z,Brisbane,Australia,-27.46790,153.03250
+9833,0,Login,45.132.224.26,https://abangadek-adv.com/,Chrome 114.0.0.0,,,2025-01-12T14:28:47.000Z,Brisbane,Australia,-27.46790,153.03250
+9834,0,Home,45.132.224.4,https://abangadek-adv.com/,Chrome 114.0.0.0,,,2025-01-12T14:28:48.000Z,Brisbane,Australia,-27.46790,153.03250
+9835,0,Client,45.132.224.23,https://abangadek-adv.com/,Chrome 114.0.0.0,,,2025-01-12T14:28:50.000Z,Brisbane,Australia,-27.46790,153.03250
+9836,0,Baliho,45.132.224.27,https://abangadek-adv.com/,Chrome 114.0.0.0,,,2025-01-12T14:28:51.000Z,Brisbane,Australia,-27.46790,153.03250
+9837,0,Tentang Kami,45.132.224.41,https://abangadek-adv.com/,Chrome 114.0.0.0,,,2025-01-12T14:28:52.000Z,Brisbane,Australia,-27.46790,153.03250
+9838,0,Interior,45.132.224.43,https://abangadek-adv.com/,Chrome 114.0.0.0,,,2025-01-12T14:28:54.000Z,Brisbane,Australia,-27.46790,153.03250
+9839,0,Home,45.132.224.24,https://abangadek-adv.com/,Chrome 114.0.0.0,,,2025-01-12T14:28:55.000Z,Brisbane,Australia,-27.46790,153.03250
+9840,0,Printing,45.132.224.3,https://abangadek-adv.com/,Chrome 114.0.0.0,,,2025-01-12T14:28:56.000Z,Brisbane,Australia,-27.46790,153.03250
+9841,0,Produk,45.132.224.10,https://abangadek-adv.com/,Chrome 114.0.0.0,,,2025-01-12T14:28:57.000Z,Brisbane,Australia,-27.46790,153.03250
 4126,0,Home,170.64.233.233,,Chrome 89.0.4389.114,,,2024-10-12T11:45:49.000Z,Other,Australia,-33.86010,151.21010
 5122,0,Home,20.191.248.188,http://abangadek-adv.com/,Chrome 74.0.3729.169,,,2024-10-27T06:47:47.000Z,Sydney,Australia,-33.87150,151.20060
 4358,0,Home,40.126.235.18,http://abangadek-adv.com/,Chrome 74.0.3729.169,,,2024-10-14T09:04:19.000Z,Sydney,Australia,-33.87150,151.20060
@@ -212,6 +222,7 @@ id,user_id,title,ip_address,referrer,agent,utm_source,utm_medium,hit_time,city,c
 3600,0,Interior,5.102.103.103,https://abangadek-adv.com/,Chrome 114.0.0.0,,,2024-10-05T10:43:01.000Z,São Paulo,Brazil,-23.53350,-46.63590
 3601,0,Printing,5.102.103.103,https://abangadek-adv.com/,Chrome 114.0.0.0,,,2024-10-05T10:43:03.000Z,São Paulo,Brazil,-23.53350,-46.63590
 3602,0,Produk,5.102.103.103,https://abangadek-adv.com/,Chrome 114.0.0.0,,,2024-10-05T10:43:07.000Z,São Paulo,Brazil,-23.53350,-46.63590
+9798,0,Home,43.157.148.38,http://www.abangadek-adv.com,Safari 604.1,,,2025-01-12T03:35:18.000Z,São Paulo,Brazil,-23.53350,-46.63590
 7795,0,Home,2.57.171.135,,Chrome 114.0.0.0,,,2024-12-09T08:14:26.000Z,São Paulo,Brazil,-23.53350,-46.63590
 7796,0,Login,2.57.171.115,https://abangadek-adv.com/,Chrome 114.0.0.0,,,2024-12-09T08:14:27.000Z,São Paulo,Brazil,-23.53350,-46.63590
 7797,0,Home,2.57.171.115,https://abangadek-adv.com/,Chrome 114.0.0.0,,,2024-12-09T08:14:29.000Z,São Paulo,Brazil,-23.53350,-46.63590
@@ -1208,15 +1219,20 @@ id,user_id,title,ip_address,referrer,agent,utm_source,utm_medium,hit_time,city,c
 3899,0,Home,42.236.17.234,https://abangadek-adv.com/,Chrome 50.0.2661.102,,,2024-10-10T16:16:49.000Z,Zhengzhou,China,34.75990,113.64590
 5699,0,Home,42.236.17.79,https://abangadek-adv.com/,Chrome 50.0.2661.102,,,2024-11-07T15:43:18.000Z,Zhengzhou,China,34.75990,113.64590
 4951,0,Home,42.236.17.198,https://abangadek-adv.com/,Chrome 50.0.2661.102,,,2024-10-24T10:58:10.000Z,Zhengzhou,China,34.75990,113.64590
+9825,0,Home,42.236.101.206,https://www.abangadek-adv.com/,Chrome 50.0.2661.102,,,2025-01-12T12:26:25.000Z,Zhengzhou,China,34.75990,113.64590
 8802,0,Home,42.236.101.198,https://abangadek-adv.com/,Chrome 50.0.2661.102,,,2024-12-26T12:23:45.000Z,Zhengzhou,China,34.75990,113.64590
 8803,0,Home,42.236.101.213,https://abangadek-adv.com/,Chrome 50.0.2661.102,,,2024-12-26T12:37:23.000Z,Zhengzhou,China,34.75990,113.64590
 9579,0,Home,42.236.17.7,https://www.abangadek-adv.com/,Chrome 50.0.2661.102,,,2025-01-06T14:22:16.000Z,Zhengzhou,China,34.75990,113.64590
 7534,0,Home,42.236.12.240,https://abangadek-adv.com/,Chrome 50.0.2661.102,,,2024-12-05T16:57:34.000Z,Zhengzhou,China,34.75990,113.64590
 8562,0,Home,42.236.101.227,https://abangadek-adv.com/,Chrome 50.0.2661.102,,,2024-12-22T11:50:19.000Z,Zhengzhou,China,34.75990,113.64590
 9586,0,Home,42.236.101.237,https://abangadek-adv.com/,Chrome 50.0.2661.102,,,2025-01-06T16:22:09.000Z,Zhengzhou,China,34.75990,113.64590
+9842,0,Home,42.236.101.217,https://abangadek-adv.com/,Chrome 50.0.2661.102,,,2025-01-12T14:29:18.000Z,Zhengzhou,China,34.75990,113.64590
 8563,0,Home,42.236.101.232,https://abangadek-adv.com/,Chrome 50.0.2661.102,,,2024-12-22T11:56:18.000Z,Zhengzhou,China,34.75990,113.64590
 9587,0,Home,42.236.17.240,https://abangadek-adv.com/,Chrome 50.0.2661.102,,,2025-01-06T16:22:14.000Z,Zhengzhou,China,34.75990,113.64590
+9847,0,Home,42.236.17.125,https://www.abangadek-adv.com/,Chrome 50.0.2661.102,,,2025-01-12T16:38:23.000Z,Zhengzhou,China,34.75990,113.64590
 3451,0,Home,42.236.17.211,https://abangadek-adv.com/,Chrome 50.0.2661.102,,,2024-10-03T02:26:47.000Z,Zhengzhou,China,34.75990,113.64590
+9852,0,Home,42.236.17.98,https://abangadek-adv.com/,Chrome 50.0.2661.102,,,2025-01-12T18:58:21.000Z,Zhengzhou,China,34.75990,113.64590
+9854,0,Home,42.236.101.210,https://abangadek-adv.com/,Chrome 50.0.2661.102,,,2025-01-12T19:26:22.000Z,Zhengzhou,China,34.75990,113.64590
 3200,0,Home,42.236.101.236,https://abangadek-adv.com/,Chrome 50.0.2661.102,,,2024-09-29T12:04:09.000Z,Zhengzhou,China,34.75990,113.64590
 3206,0,Home,42.236.17.244,https://abangadek-adv.com/,Chrome 50.0.2661.102,,,2024-09-29T13:17:15.000Z,Zhengzhou,China,34.75990,113.64590
 7309,0,Home,42.236.101.206,https://abangadek-adv.com/,Chrome 50.0.2661.102,,,2024-12-01T11:35:53.000Z,Zhengzhou,China,34.75990,113.64590
@@ -1306,6 +1322,8 @@ id,user_id,title,ip_address,referrer,agent,utm_source,utm_medium,hit_time,city,c
 8936,0,Tentang Kami,157.97.120.4,https://abangadek-adv.com/,Safari 605.1.15,,,2024-12-28T23:44:00.000Z,Hjørring,Denmark,57.47530,9.97930
 5246,0,Baliho 2S-1 Sp Rumbio Solok,217.63.106.99,,Chrome 125.0.6422.41,,,2024-10-30T04:32:10.000Z,Ålestrup,Denmark,56.70180,9.50090
 4997,0,Home,131.221.7.63,,Chrome 123.0.6312.87,,,2024-10-25T10:12:07.000Z,Monción,Dominican Republic,19.40720,-71.15450
+9779,0,Home,197.35.128.58,https://www.google.com,Chrome 119.0.0.0,,,2025-01-11T15:37:59.000Z,Al Mansurah,Egypt,31.03710,31.38440
+9780,0,Home,197.35.184.0,https://www.google.com,Chrome 119.0.0.0,,,2025-01-11T15:38:06.000Z,Al Mansurah,Egypt,31.03710,31.38440
 9637,0,Home,185.73.124.130,https://www.google.com,Chrome 119.0.0.0,,,2025-01-08T04:14:41.000Z,Other,Estonia,58.99980,25.98560
 2670,0,Home,195.178.110.13,,Other,,,2024-09-23T10:44:49.000Z,Tallinn,Estonia,59.43810,24.73690
 2168,0,Home,165.231.182.70,,Chrome 84.0.4147.89,,,2024-09-13T23:15:21.000Z,Tallinn,Estonia,59.43810,24.73690
@@ -1709,16 +1727,19 @@ id,user_id,title,ip_address,referrer,agent,utm_source,utm_medium,hit_time,city,c
 9498,0,Test Printing,54.36.148.176,,Mozilla 5.0,,,2025-01-05T11:49:32.000Z,Other,France,48.85820,2.33870
 7195,0,Test Printing,54.36.148.150,,Mozilla 5.0,,,2024-11-29T10:39:37.000Z,Other,France,48.85820,2.33870
 9499,0,Test Printing 1,54.36.148.81,,Mozilla 5.0,,,2025-01-05T12:39:09.000Z,Other,France,48.85820,2.33870
+9755,0,Baliho,54.36.149.43,,Mozilla 5.0,,,2025-01-10T21:32:03.000Z,Other,France,48.85820,2.33870
 8220,0,Tentang Kami,54.36.149.37,,Mozilla 5.0,,,2024-12-17T08:34:09.000Z,Other,France,48.85820,2.33870
 8988,0,Test Printing,54.36.148.251,,Mozilla 5.0,,,2024-12-30T05:20:27.000Z,Other,France,48.85820,2.33870
 7197,0,Test Printing 1,54.36.149.41,,Mozilla 5.0,,,2024-11-29T12:17:31.000Z,Other,France,48.85820,2.33870
 9501,0,Test Printing 10,54.36.148.81,,Mozilla 5.0,,,2025-01-05T13:15:01.000Z,Other,France,48.85820,2.33870
+9757,0,Baliho,54.36.149.54,,Mozilla 5.0,,,2025-01-11T01:05:47.000Z,Other,France,48.85820,2.33870
 8990,0,"Baliho Camat Bungus, Padang",54.36.148.89,,Mozilla 5.0,,,2024-12-30T07:17:15.000Z,Other,France,48.85820,2.33870
 7199,0,Baliho,54.36.148.65,,Mozilla 5.0,,,2024-11-29T13:43:00.000Z,Other,France,48.85820,2.33870
 8991,0,Test Printing 1,54.36.148.244,,Mozilla 5.0,,,2024-12-30T07:31:06.000Z,Other,France,48.85820,2.33870
 8224,0,Baliho 2S-1 Kuok Btg Kapas,54.36.148.89,,Mozilla 5.0,,,2024-12-17T10:00:07.000Z,Other,France,48.85820,2.33870
 8992,0,Baliho 2S-1 Bopet Saiyo Pdg Pjg,54.36.148.148,,Mozilla 5.0,,,2024-12-30T07:43:07.000Z,Other,France,48.85820,2.33870
 9504,0,Baliho 2S-2 Sp Rumbio Solok,54.36.148.10,,Mozilla 5.0,,,2025-01-05T13:44:27.000Z,Other,France,48.85820,2.33870
+9760,0,Baliho,54.36.149.15,,Mozilla 5.0,,,2025-01-11T04:00:53.000Z,Other,France,48.85820,2.33870
 8993,0,Test Printing 10,54.36.148.3,,Mozilla 5.0,,,2024-12-30T07:55:35.000Z,Other,France,48.85820,2.33870
 9505,0,Test Printing 4,54.36.148.246,,Mozilla 5.0,,,2025-01-05T14:00:32.000Z,Other,France,48.85820,2.33870
 8226,0,Test Printing,54.36.148.233,,Mozilla 5.0,,,2024-12-17T11:38:51.000Z,Other,France,48.85820,2.33870
@@ -1727,6 +1748,7 @@ id,user_id,title,ip_address,referrer,agent,utm_source,utm_medium,hit_time,city,c
 8227,0,Test Printing 1,54.36.148.125,,Mozilla 5.0,,,2024-12-17T12:47:40.000Z,Other,France,48.85820,2.33870
 8995,0,Baliho Ombilin Singkarak,54.36.149.52,,Mozilla 5.0,,,2024-12-30T08:07:56.000Z,Other,France,48.85820,2.33870
 9507,0,Baliho 2S-1 Sp Rumbio Solok,54.36.148.57,,Mozilla 5.0,,,2025-01-05T14:35:06.000Z,Other,France,48.85820,2.33870
+9763,0,Baliho Kambang Pessel 1,54.36.149.56,,Mozilla 5.0,,,2025-01-11T06:08:38.000Z,Other,France,48.85820,2.33870
 8996,0,Baliho,54.36.149.72,,Mozilla 5.0,,,2024-12-30T08:20:28.000Z,Other,France,48.85820,2.33870
 9508,0,Test Printing 11,54.36.148.80,,Mozilla 5.0,,,2025-01-05T14:52:47.000Z,Other,France,48.85820,2.33870
 8997,0,Baliho,54.36.148.165,,Mozilla 5.0,,,2024-12-30T08:33:12.000Z,Other,France,48.85820,2.33870
@@ -1736,10 +1758,12 @@ id,user_id,title,ip_address,referrer,agent,utm_source,utm_medium,hit_time,city,c
 8999,0,Baliho Tarusan Pessel 1,54.36.148.195,,Mozilla 5.0,,,2024-12-30T08:58:06.000Z,Other,France,48.85820,2.33870
 8232,0,Test Printing 10,54.36.148.166,,Mozilla 5.0,,,2024-12-17T15:48:11.000Z,Other,France,48.85820,2.33870
 9000,0,Baliho 2S-2 Siteba Padang,54.36.148.182,,Mozilla 5.0,,,2024-12-30T09:20:51.000Z,Other,France,48.85820,2.33870
+9768,0,Home,54.36.148.31,,Mozilla 5.0,,,2025-01-11T08:47:19.000Z,Other,France,48.85820,2.33870
 8489,0,Home,217.113.194.66,,Mozilla 5.0,,,2024-12-20T17:14:28.000Z,Other,France,48.85820,2.33870
 8745,0,Baliho 2S-2 Tanah Sirah Padang,54.36.148.110,,Mozilla 5.0,,,2024-12-25T13:52:14.000Z,Other,France,48.85820,2.33870
 7210,0,Test Printing 4,54.36.148.93,,Mozilla 5.0,,,2024-11-29T17:02:18.000Z,Other,France,48.85820,2.33870
 9003,0,Test Printing 11,54.36.149.92,,Mozilla 5.0,,,2024-12-30T09:38:11.000Z,Other,France,48.85820,2.33870
+9771,0,Baliho 2S-1 Ilyas Yakub Pessel,54.36.148.26,,Mozilla 5.0,,,2025-01-11T10:22:34.000Z,Other,France,48.85820,2.33870
 9004,0,Home,54.36.149.95,,Mozilla 5.0,,,2024-12-30T09:55:58.000Z,Other,France,48.85820,2.33870
 9516,0,Desain Interior 2,54.36.148.104,,Mozilla 5.0,,,2025-01-05T19:48:31.000Z,Other,France,48.85820,2.33870
 2093,0,Home,51.83.214.114,,Chrome 122.0.0.0,,,2024-09-12T23:58:50.000Z,Other,France,48.85820,2.33870
@@ -1749,10 +1773,12 @@ id,user_id,title,ip_address,referrer,agent,utm_source,utm_medium,hit_time,city,c
 7215,0,Test Printing 11,54.36.148.47,,Mozilla 5.0,,,2024-11-29T21:26:45.000Z,Other,France,48.85820,2.33870
 9007,0,Interior,54.36.149.80,,Mozilla 5.0,,,2024-12-30T10:45:37.000Z,Other,France,48.85820,2.33870
 9519,0,"Baliho Camat Bungus, Padang",54.36.149.2,,Mozilla 5.0,,,2025-01-05T21:12:56.000Z,Other,France,48.85820,2.33870
+9775,0,Baliho,54.36.148.49,,Mozilla 5.0,,,2025-01-11T12:22:08.000Z,Other,France,48.85820,2.33870
 8752,0,Baliho 2S-2 S. Landai PdgPjg,54.36.148.235,,Mozilla 5.0,,,2024-12-25T16:51:31.000Z,Other,France,48.85820,2.33870
 9008,0,Test Printing 5,54.36.148.247,,Mozilla 5.0,,,2024-12-30T11:02:12.000Z,Other,France,48.85820,2.33870
 7217,0,Test Printing 5,54.36.148.216,,Mozilla 5.0,,,2024-11-29T22:19:47.000Z,Other,France,48.85820,2.33870
 9010,0,Printing,54.36.148.124,,Mozilla 5.0,,,2024-12-30T11:18:12.000Z,Other,France,48.85820,2.33870
+9778,0,Baliho Tarusan Pessel 1,54.36.149.90,,Mozilla 5.0,,,2025-01-11T15:11:35.000Z,Other,France,48.85820,2.33870
 8243,0,Baliho Depan INS Kayu Tanam,54.36.148.125,,Mozilla 5.0,,,2024-12-17T16:49:15.000Z,Other,France,48.85820,2.33870
 7220,0,Desain Interior ,54.36.148.212,,Mozilla 5.0,,,2024-11-30T00:04:28.000Z,Other,France,48.85820,2.33870
 8756,0,Printing,54.36.148.159,,Mozilla 5.0,,,2024-12-25T17:55:26.000Z,Other,France,48.85820,2.33870
@@ -1763,6 +1789,7 @@ id,user_id,title,ip_address,referrer,agent,utm_source,utm_medium,hit_time,city,c
 8246,0, Baliho Kambang Pessel 2,54.36.148.63,,Mozilla 5.0,,,2024-12-17T17:47:37.000Z,Other,France,48.85820,2.33870
 9015,0,Baliho 2S-2 Sp Rumbio Solok,54.36.149.59,,Mozilla 5.0,,,2024-12-30T12:14:07.000Z,Other,France,48.85820,2.33870
 9527,0,Desain Interior ,54.36.148.116,,Mozilla 5.0,,,2025-01-05T22:04:55.000Z,Other,France,48.85820,2.33870
+9783,0,Baliho 2S-2 Sp Rumbio Solok,54.36.148.240,,Mozilla 5.0,,,2025-01-11T16:34:20.000Z,Other,France,48.85820,2.33870
 6968,0,Interior,54.36.148.110,,Mozilla 5.0,,,2024-11-26T06:39:04.000Z,Other,France,48.85820,2.33870
 7224,0,Desain Interior 2,54.36.149.1,,Mozilla 5.0,,,2024-11-30T00:56:28.000Z,Other,France,48.85820,2.33870
 9016,0,Baliho 2S-2 Ilyas Yakub Pessel,54.36.148.10,,Mozilla 5.0,,,2024-12-30T12:33:26.000Z,Other,France,48.85820,2.33870
@@ -1772,34 +1799,41 @@ id,user_id,title,ip_address,referrer,agent,utm_source,utm_medium,hit_time,city,c
 8761,0,Baliho Pasar Sicincin,54.36.149.72,,Mozilla 5.0,,,2024-12-25T19:24:55.000Z,Other,France,48.85820,2.33870
 9017,0,Baliho Bunga Pasang Salido 1,54.36.149.100,,Mozilla 5.0,,,2024-12-30T12:50:57.000Z,Other,France,48.85820,2.33870
 8762,0,Baliho 2S-1 S. Landai PdgPjg,54.36.148.173,,Mozilla 5.0,,,2024-12-25T20:14:47.000Z,Other,France,48.85820,2.33870
+9786,0,Baliho Bunga Pasang Salido 1,54.36.148.217,,Mozilla 5.0,,,2025-01-11T18:30:35.000Z,Other,France,48.85820,2.33870
 6971,0,Baliho Ombilin Singkarak,54.36.148.241,,Mozilla 5.0,,,2024-11-26T08:25:16.000Z,Other,France,48.85820,2.33870
 8251,0,Baliho 2S-2 Kuok Btg Kapas,54.36.148.246,,Mozilla 5.0,,,2024-12-17T19:51:56.000Z,Other,France,48.85820,2.33870
+9787,0,Baliho 2S-1 Sp Rumbio Solok,54.36.148.200,,Mozilla 5.0,,,2025-01-11T19:37:11.000Z,Other,France,48.85820,2.33870
 2108,0,Home,54.36.148.201,,Mozilla 5.0,,,2024-09-13T02:25:01.000Z,Other,France,48.85820,2.33870
 9020,0,Baliho 2S-1 Sp Rumbio Solok,54.36.148.109,,Mozilla 5.0,,,2024-12-30T13:08:37.000Z,Other,France,48.85820,2.33870
 6461,0,Home,54.36.149.22,,Mozilla 5.0,,,2024-11-18T01:41:13.000Z,Other,France,48.85820,2.33870
 6973,0,"Baliho Camat Bungus, Padang",54.36.149.30,,Mozilla 5.0,,,2024-11-26T09:04:53.000Z,Other,France,48.85820,2.33870
 7229,0,Desain Interior 3,54.36.149.95,,Mozilla 5.0,,,2024-11-30T03:47:15.000Z,Other,France,48.85820,2.33870
 9022,0,Interior,54.36.149.75,,Mozilla 5.0,,,2024-12-30T13:27:29.000Z,Other,France,48.85820,2.33870
+9790,0,Test Printing 1,54.36.149.1,,Mozilla 5.0,,,2025-01-11T21:29:05.000Z,Other,France,48.85820,2.33870
 6719,0,Baliho 2S-2 Jhoni Anwar Padang,54.36.148.22,,Mozilla 5.0,,,2024-11-21T22:43:26.000Z,Other,France,48.85820,2.33870
 8255,0,Baliho 2S-1 Siteba Padang,54.36.148.125,,Mozilla 5.0,,,2024-12-17T20:54:09.000Z,Other,France,48.85820,2.33870
 8767,0,Interior,54.36.148.222,,Mozilla 5.0,,,2024-12-25T22:41:39.000Z,Other,France,48.85820,2.33870
 6720,0,Baliho 2S-2 Sutomo Padang,54.36.149.86,,Mozilla 5.0,,,2024-11-21T23:22:57.000Z,Other,France,48.85820,2.33870
 8768,0,Baliho,54.36.148.148,,Mozilla 5.0,,,2024-12-25T23:14:06.000Z,Other,France,48.85820,2.33870
+9792,0,Test Printing 10,54.36.148.0,,Mozilla 5.0,,,2025-01-11T22:31:18.000Z,Other,France,48.85820,2.33870
 3393,0,Klien Kami 4,54.36.148.66,,Mozilla 5.0,,,2024-10-02T04:56:28.000Z,Other,France,48.85820,2.33870
 6721,0,Baliho 2S-1 Sutomo Padang,54.36.148.248,,Mozilla 5.0,,,2024-11-21T23:59:30.000Z,Other,France,48.85820,2.33870
 8001,0,Klien Kami 3,54.36.149.54,,Mozilla 5.0,,,2024-12-13T05:50:13.000Z,Other,France,48.85820,2.33870
 9025,0,Desain Interior 2,54.36.148.154,,Mozilla 5.0,,,2024-12-30T13:54:14.000Z,Other,France,48.85820,2.33870
 6722,0,Baliho 2S-2 Kasang - Stasiun Duku,54.36.148.132,,Mozilla 5.0,,,2024-11-22T01:32:19.000Z,Other,France,48.85820,2.33870
 9026,0,Baliho 2S-1 Jhoni Anwar Padang,54.36.148.125,,Mozilla 5.0,,,2024-12-30T14:19:58.000Z,Other,France,48.85820,2.33870
+9794,0,Test Printing 4,54.36.149.34,,Mozilla 5.0,,,2025-01-11T23:33:22.000Z,Other,France,48.85820,2.33870
 9027,0,Client,54.36.148.230,,Mozilla 5.0,,,2024-12-30T14:46:25.000Z,Other,France,48.85820,2.33870
 2884,0,Home,185.34.33.2,abangadek-adv.com,Chrome 89.0.4389.105,,,2024-09-25T17:53:31.000Z,Other,France,48.85820,2.33870
 6724,0,Baliho 2S-2 Jalan Ilyas Yakub Dua Pessel,54.36.149.93,,Mozilla 5.0,,,2024-11-22T02:34:07.000Z,Other,France,48.85820,2.33870
 8260,0,Test Printing 11,54.36.148.3,,Mozilla 5.0,,,2024-12-17T22:01:44.000Z,Other,France,48.85820,2.33870
 9028,0,Desain Interior ,54.36.148.157,,Mozilla 5.0,,,2024-12-30T15:12:33.000Z,Other,France,48.85820,2.33870
 9540,0,Desain Interior 1,54.36.148.142,,Mozilla 5.0,,,2025-01-05T22:59:57.000Z,Other,France,48.85820,2.33870
+9796,0,Test Printing 11,54.36.148.36,,Mozilla 5.0,,,2025-01-12T00:34:52.000Z,Other,France,48.85820,2.33870
 2885,0,Tentang Kami,185.34.33.2,https://abangadek-adv.com/about,Chrome 89.0.4389.105,,,2024-09-25T17:53:33.000Z,Other,France,48.85820,2.33870
 6469,0,Test Printing 11,54.36.149.69,,Mozilla 5.0,,,2024-11-18T03:22:25.000Z,Other,France,48.85820,2.33870
 6725,0,Baliho,54.36.148.56,,Mozilla 5.0,,,2024-11-22T03:54:30.000Z,Other,France,48.85820,2.33870
+9797,0,Test Printing 5,54.36.148.159,,Mozilla 5.0,,,2025-01-12T02:16:27.000Z,Other,France,48.85820,2.33870
 2886,0,Client,185.34.33.2,https://abangadek-adv.com/client,Chrome 89.0.4389.105,,,2024-09-25T17:53:35.000Z,Other,France,48.85820,2.33870
 6726,0,Baliho Kambang Pessel 1,54.36.148.169,,Mozilla 5.0,,,2024-11-22T04:31:00.000Z,Other,France,48.85820,2.33870
 8774,0,Baliho,54.36.148.253,,Mozilla 5.0,,,2024-12-26T01:42:37.000Z,Other,France,48.85820,2.33870
@@ -1808,16 +1842,20 @@ id,user_id,title,ip_address,referrer,agent,utm_source,utm_medium,hit_time,city,c
 2887,0,Login,185.34.33.2,https://abangadek-adv.com/login,Chrome 89.0.4389.105,,,2024-09-25T17:53:38.000Z,Other,France,48.85820,2.33870
 6471,0,Desain Interior ,54.36.148.1,,Mozilla 5.0,,,2024-11-18T03:46:46.000Z,Other,France,48.85820,2.33870
 9031,0,Desain Interior 1,54.36.149.58,,Mozilla 5.0,,,2024-12-30T16:41:25.000Z,Other,France,48.85820,2.33870
+9799,0,Desain Interior 2,54.36.148.45,,Mozilla 5.0,,,2025-01-12T04:28:16.000Z,Other,France,48.85820,2.33870
 6472,0,Desain Interior 2,54.36.148.241,,Mozilla 5.0,,,2024-11-18T04:15:52.000Z,Other,France,48.85820,2.33870
 8008,0,Baliho 2S-2 Kasang - Stasiun Duku,54.36.148.152,,Mozilla 5.0,,,2024-12-13T10:33:13.000Z,Other,France,48.85820,2.33870
 9544,0,Baliho 2S-1 Tanah Sirah Padang,54.36.149.0,,Mozilla 5.0,,,2025-01-06T00:50:21.000Z,Other,France,48.85820,2.33870
 6985,0,Produk,54.36.149.65,,Mozilla 5.0,,,2024-11-26T14:24:17.000Z,Other,France,48.85820,2.33870
 9545,0,Baliho 2S-1 Sutomo Padang,54.36.148.233,,Mozilla 5.0,,,2025-01-06T01:10:58.000Z,Other,France,48.85820,2.33870
+9801,0,Desain Interior ,54.36.148.30,,Mozilla 5.0,,,2025-01-12T05:45:28.000Z,Other,France,48.85820,2.33870
 2122,0,Home,62.210.90.212,,Chrome 124.0.0.0,,,2024-09-13T04:14:49.000Z,Other,France,48.85820,2.33870
 9034,0,Client,54.36.148.3,,Mozilla 5.0,,,2024-12-30T17:11:43.000Z,Other,France,48.85820,2.33870
 9546,0,Baliho 2S-2 Jhoni Anwar Padang,54.36.148.253,,Mozilla 5.0,,,2025-01-06T01:30:50.000Z,Other,France,48.85820,2.33870
+9802,0,Desain Interior 1,54.36.149.46,,Mozilla 5.0,,,2025-01-12T06:58:31.000Z,Other,France,48.85820,2.33870
 6475,0,Test Printing 5,54.36.148.73,,Mozilla 5.0,,,2024-11-18T05:17:16.000Z,Other,France,48.85820,2.33870
 9547,0,Baliho 2S-2 Sutomo Padang,54.36.148.77,,Mozilla 5.0,,,2025-01-06T01:50:24.000Z,Other,France,48.85820,2.33870
+9803,0,Klien Kami 4,54.36.148.41,,Mozilla 5.0,,,2025-01-12T08:00:58.000Z,Other,France,48.85820,2.33870
 8780,0,Client,54.36.148.143,,Mozilla 5.0,,,2024-12-26T02:27:14.000Z,Other,France,48.85820,2.33870
 9036,0,Desain Interior 3,54.36.148.5,,Mozilla 5.0,,,2024-12-30T17:43:09.000Z,Other,France,48.85820,2.33870
 9548,0,Klien Kami 4,54.36.148.1,,Mozilla 5.0,,,2025-01-06T02:11:21.000Z,Other,France,48.85820,2.33870
@@ -1828,6 +1866,7 @@ id,user_id,title,ip_address,referrer,agent,utm_source,utm_medium,hit_time,city,c
 7246,0,Baliho Tarusan Pessel 1,54.36.149.13,,Mozilla 5.0,,,2024-11-30T11:27:41.000Z,Other,France,48.85820,2.33870
 9550,0,Baliho 2S-1 Balai Nan Duo Payakumbuh,54.36.148.200,,Mozilla 5.0,,,2025-01-06T02:52:13.000Z,Other,France,48.85820,2.33870
 4687,0,Home,54.36.148.55,,Mozilla 5.0,,,2024-10-19T08:29:49.000Z,Other,France,48.85820,2.33870
+9807,0,Desain Interior 3,54.36.148.222,,Mozilla 5.0,,,2025-01-12T09:37:01.000Z,Other,France,48.85820,2.33870
 9040,0, Baliho Kambang Pessel 2,54.36.149.87,,Mozilla 5.0,,,2024-12-30T19:12:15.000Z,Other,France,48.85820,2.33870
 9296,0,Home,54.36.148.252,,Mozilla 5.0,,,2025-01-03T05:57:38.000Z,Other,France,48.85820,2.33870
 6738,0,Home,141.95.84.19,https://abangadek-adv.com/,Chrome 124.0.6367.91,,,2024-11-22T05:38:15.000Z,Other,France,48.85820,2.33870
@@ -1857,6 +1896,7 @@ id,user_id,title,ip_address,referrer,agent,utm_source,utm_medium,hit_time,city,c
 2139,0,Home,62.210.90.209,,Chrome 124.0.0.0,,,2024-09-13T13:21:14.000Z,Other,France,48.85820,2.33870
 9563,0,Baliho 2S-2 Balai Nan Duo Payakumbuh,54.36.148.132,,Mozilla 5.0,,,2025-01-06T08:09:03.000Z,Other,France,48.85820,2.33870
 8284,0,Baliho BRI Surian 1,54.36.148.121,,Mozilla 5.0,,,2024-12-18T10:45:06.000Z,Other,France,48.85820,2.33870
+9820,0,"Baliho Camat Bungus, Padang",54.36.149.79,,Mozilla 5.0,,,2025-01-12T11:01:47.000Z,Other,France,48.85820,2.33870
 9053,0,Baliho,54.36.148.125,,Mozilla 5.0,,,2024-12-31T04:41:41.000Z,Other,France,48.85820,2.33870
 9565,0,Baliho 2S-2 Kasang - Stasiun Duku,54.36.149.60,,Mozilla 5.0,,,2025-01-06T08:44:21.000Z,Other,France,48.85820,2.33870
 7006,0,Baliho 2S-2 Ilyas Yakub Pessel,54.36.149.82,,Mozilla 5.0,,,2024-11-26T22:16:42.000Z,Other,France,48.85820,2.33870
@@ -1865,6 +1905,7 @@ id,user_id,title,ip_address,referrer,agent,utm_source,utm_medium,hit_time,city,c
 6496,0,Klien Kami 2,54.36.149.59,,Mozilla 5.0,,,2024-11-18T14:04:29.000Z,Other,France,48.85820,2.33870
 9056,0,Klien Kami 2,54.36.149.10,,Mozilla 5.0,,,2024-12-31T06:11:54.000Z,Other,France,48.85820,2.33870
 9312,0,Tentang Kami,54.36.149.26,,Mozilla 5.0,,,2025-01-03T11:38:04.000Z,Other,France,48.85820,2.33870
+9824,0,Baliho 2S-1 Bopet Saiyo Pdg Pjg,54.36.148.143,,Mozilla 5.0,,,2025-01-12T12:18:24.000Z,Other,France,48.85820,2.33870
 3426,0,Baliho 2S-1 Bopet Saiyo Pdg Pjg,54.36.148.222,,Mozilla 5.0,,,2024-10-02T12:39:16.000Z,Other,France,48.85820,2.33870
 9058,0,Klien Kami 1,54.36.148.143,,Mozilla 5.0,,,2024-12-31T07:12:39.000Z,Other,France,48.85820,2.33870
 9570,0,Baliho Depan INS Kayu Tanam,54.36.148.8,,Mozilla 5.0,,,2025-01-06T10:47:36.000Z,Other,France,48.85820,2.33870
@@ -1875,6 +1916,7 @@ id,user_id,title,ip_address,referrer,agent,utm_source,utm_medium,hit_time,city,c
 9572,0,Baliho 2S-1 Jhoni Anwar Padang,54.36.148.7,,Mozilla 5.0,,,2025-01-06T11:10:09.000Z,Other,France,48.85820,2.33870
 9061,0,Baliho BRI Surian 1,54.36.149.67,,Mozilla 5.0,,,2024-12-31T09:23:28.000Z,Other,France,48.85820,2.33870
 9573,0, Baliho Kambang Pessel 2,54.36.148.69,,Mozilla 5.0,,,2025-01-06T11:32:11.000Z,Other,France,48.85820,2.33870
+9829,0,Baliho Ombilin Singkarak,54.36.148.62,,Mozilla 5.0,,,2025-01-12T13:38:38.000Z,Other,France,48.85820,2.33870
 3430,0,Home,54.36.148.125,,Mozilla 5.0,,,2024-10-02T15:10:47.000Z,Other,France,48.85820,2.33870
 6502,0,Home,147.135.223.135,https://abangadek-adv.com/,Chrome 121.0.0.0,,,2024-11-18T15:42:04.000Z,Other,France,48.85820,2.33870
 7014,0,Home,51.75.144.201,https://abangadek-adv.com/,Chrome 125.0.0.0,,,2024-11-27T02:16:09.000Z,Other,France,48.85820,2.33870
@@ -1902,15 +1944,20 @@ id,user_id,title,ip_address,referrer,agent,utm_source,utm_medium,hit_time,city,c
 9585,0,Baliho Bunga Pasang Salido 2,54.36.148.38,,Mozilla 5.0,,,2025-01-06T16:20:18.000Z,Other,France,48.85820,2.33870
 9330,0,Interior,54.36.148.85,,Mozilla 5.0,,,2025-01-04T01:44:42.000Z,Other,France,48.85820,2.33870
 8307,0,Baliho 2S-1 Sp Rumbio Solok,54.36.148.168,,Mozilla 5.0,,,2024-12-18T17:08:12.000Z,Other,France,48.85820,2.33870
+9843,0,Baliho 2S-2 Jalan Ilyas Yakub Dua Pessel,54.36.148.202,,Mozilla 5.0,,,2025-01-12T14:55:12.000Z,Other,France,48.85820,2.33870
 5748,0,Home,46.105.134.248,abangadek-adv.com,Chrome 58.0.1145.75,,,2024-11-09T04:33:15.000Z,Other,France,48.85820,2.33870
+9844,0,Baliho 2S-1 Balai Nan Duo Payakumbuh,54.36.148.67,,Mozilla 5.0,,,2025-01-12T15:45:20.000Z,Other,France,48.85820,2.33870
 9589,0,Klien Kami 3,54.36.148.254,,Mozilla 5.0,,,2025-01-06T17:31:07.000Z,Other,France,48.85820,2.33870
 9334,0,Client,54.36.148.231,,Mozilla 5.0,,,2025-01-04T03:25:55.000Z,Other,France,48.85820,2.33870
+9846,0,Baliho,54.36.148.136,,Mozilla 5.0,,,2025-01-12T16:33:44.000Z,Other,France,48.85820,2.33870
 8311,0,Baliho Sutan Syahrir Bukittinggi,54.36.149.99,,Mozilla 5.0,,,2024-12-18T18:08:42.000Z,Other,France,48.85820,2.33870
 9593,0,Baliho 2S-2 Kuok Btg Kapas,54.36.148.16,,Mozilla 5.0,,,2025-01-06T20:41:05.000Z,Other,France,48.85820,2.33870
 8314,0,Desain Interior 3,54.36.148.205,,Mozilla 5.0,,,2024-12-18T19:03:59.000Z,Other,France,48.85820,2.33870
+9850,0,Tentang Kami,54.36.149.69,,Mozilla 5.0,,,2025-01-12T17:52:21.000Z,Other,France,48.85820,2.33870
 9083,0,Baliho Sutan Syahrir Bukittinggi,54.36.148.138,,Mozilla 5.0,,,2024-12-31T17:59:47.000Z,Other,France,48.85820,2.33870
 8317,0,Baliho BRI Surian 2,54.36.149.28,,Mozilla 5.0,,,2024-12-18T19:56:14.000Z,Other,France,48.85820,2.33870
 9597,0,Baliho 2S-1 Jalan Ilyas Yakub Dua Pessel,54.36.148.108,,Mozilla 5.0,,,2025-01-06T21:53:58.000Z,Other,France,48.85820,2.33870
+9853,0,Produk,54.36.149.24,,Mozilla 5.0,,,2025-01-12T19:18:14.000Z,Other,France,48.85820,2.33870
 6526,0,Produk,54.36.149.70,,Mozilla 5.0,,,2024-11-19T01:38:06.000Z,Other,France,48.85820,2.33870
 9598,0,Baliho 2S-1 Kasang - Stasiun Duku,54.36.148.26,,Mozilla 5.0,,,2025-01-06T22:29:24.000Z,Other,France,48.85820,2.33870
 9087,0,Home,54.36.148.198,,Mozilla 5.0,,,2025-01-01T00:12:40.000Z,Other,France,48.85820,2.33870
@@ -1921,6 +1968,7 @@ id,user_id,title,ip_address,referrer,agent,utm_source,utm_medium,hit_time,city,c
 9092,0,Baliho BRI Surian 2,54.36.148.172,,Mozilla 5.0,,,2025-01-01T03:26:24.000Z,Other,France,48.85820,2.33870
 5509,0,Home,141.95.84.19,https://abangadek-adv.com/,Chrome 124.0.6367.92,,,2024-11-04T23:49:16.000Z,Other,France,48.85820,2.33870
 6533,0,Baliho Tarusan Pessel 1,54.36.149.24,,Mozilla 5.0,,,2024-11-19T05:56:01.000Z,Other,France,48.85820,2.33870
+9861,0,Baliho 2S-2 Siteba Padang,54.36.149.19,,Mozilla 5.0,,,2025-01-12T20:47:13.000Z,Other,France,48.85820,2.33870
 4998,0,Home,162.19.234.137,https://abangadek-adv.com/,Chrome 125.0.0.0,,,2024-10-25T10:33:15.000Z,Other,France,48.85820,2.33870
 6534,0,Baliho 2S-1 Sp Rumbio Solok,54.36.148.81,,Mozilla 5.0,,,2024-11-19T08:06:21.000Z,Other,France,48.85820,2.33870
 7303,0,Home,162.19.234.137,https://abangadek-adv.com/,Chrome 124.0.6367.92,,,2024-12-01T09:08:39.000Z,Other,France,48.85820,2.33870
@@ -2647,6 +2695,7 @@ id,user_id,title,ip_address,referrer,agent,utm_source,utm_medium,hit_time,city,c
 3049,0,Home,139.59.26.174,,Chrome 126.0.0.0,,,2024-09-27T11:35:54.000Z,Bengaluru,India,12.96340,77.58550
 5869,0,Home,64.227.134.26,,Chrome 129.0.0.0,,,2024-11-10T14:33:05.000Z,Bengaluru,India,12.96340,77.58550
 5234,0,Baliho,103.30.83.126,,Chrome 125.0.6422.41,,,2024-10-30T04:31:23.000Z,Jalandhar,India,31.33000,75.58440
+9772,0,Home,13.201.80.202,http://www.abangadek-adv.com/,Chrome 74.0.3729.169,,,2025-01-11T10:58:53.000Z,Mumbai,India,19.07480,72.88560
 2880,0,Home,35.200.194.250,http://abangadek-adv.com/,Chrome 96.0.4664.45,,,2024-09-25T17:21:17.000Z,Mumbai,India,19.07480,72.88560
 5448,0,Home,35.200.204.133,http://abangadek-adv.com/,Other,,,2024-11-03T00:12:13.000Z,Mumbai,India,19.07480,72.88560
 3922,0,Home,34.100.250.151,http://abangadek-adv.com/,Other,,,2024-10-10T20:42:22.000Z,Mumbai,India,19.07480,72.88560
@@ -2666,6 +2715,7 @@ id,user_id,title,ip_address,referrer,agent,utm_source,utm_medium,hit_time,city,c
 8874,0,Printing,106.219.163.176,https://abangadek-adv.com/,Safari 605.1.15,,,2024-12-27T14:37:35.000Z,Other,India,21.99740,79.00110
 8875,0,Produk,106.219.163.176,https://abangadek-adv.com/,Safari 605.1.15,,,2024-12-27T14:37:36.000Z,Other,India,21.99740,79.00110
 3046,0,Home,136.233.82.215,abangadek-adv.com,Chrome 58.0.1145.75,,,2024-09-27T05:12:06.000Z,Other,India,13.07730,80.29540
+9862,0,Home,110.50.81.198,,Chrome 109.0.0.0,,,2025-01-12T21:38:01.000Z,Bandung,Indonesia,-6.92170,107.60710
 9685,0,Home,114.122.197.111,https://yandex.com/,Chrome 131.0.0.0,,,2025-01-09T10:22:41.000Z,Banjarmasin,Indonesia,-3.32190,114.58710
 8833,0,Home,36.69.114.201,,Safari 604.1,,,2024-12-27T03:19:43.000Z,Duri Pulo,Indonesia,-6.16990,106.80300
 3072,0,Baliho,223.255.231.135,https://abangadek-adv.com/,Chrome 128.0.0.0,,,2024-09-27T19:11:54.000Z,Jakarta,Indonesia,-6.21140,106.84460
@@ -2791,6 +2841,7 @@ id,user_id,title,ip_address,referrer,agent,utm_source,utm_medium,hit_time,city,c
 7962,0,Home,103.247.9.9,,Other,,,2024-12-12T13:03:27.000Z,Other,Indonesia,-6.17280,106.82720
 6683,0,Home,103.247.9.9,,Other,,,2024-11-21T13:01:00.000Z,Other,Indonesia,-6.17280,106.82720
 9500,0,Home,103.247.9.9,,Other,,,2025-01-05T13:02:08.000Z,Other,Indonesia,-6.17280,106.82720
+9756,0,Home,72.14.201.146,https://www.google.com/,Chrome 131.0.0.0,,,2025-01-11T00:12:57.000Z,Other,Indonesia,-6.17280,106.82720
 9245,0,Home,103.247.9.9,,Other,,,2025-01-02T13:01:48.000Z,Other,Indonesia,-6.17280,106.82720
 5150,0,Home,72.14.201.147,https://www.google.com/,Chrome 130.0.0.0,,,2024-10-28T01:26:31.000Z,Other,Indonesia,-6.17280,106.82720
 7198,0,Home,103.247.9.9,,Other,,,2024-11-29T13:02:14.000Z,Other,Indonesia,-6.17280,106.82720
@@ -2804,8 +2855,10 @@ id,user_id,title,ip_address,referrer,agent,utm_source,utm_medium,hit_time,city,c
 9261,0,Home,72.14.201.146,https://www.google.com/,Chrome 131.0.0.0,,,2025-01-02T22:00:53.000Z,Other,Indonesia,-6.17280,106.82720
 4912,0,Home,193.186.4.144,https://www.google.com/,Chrome 130.0.0.0,,,2024-10-23T21:48:25.000Z,Other,Indonesia,-6.17280,106.82720
 7472,0,Home,103.247.9.9,,Other,,,2024-12-04T13:01:06.000Z,Other,Indonesia,-6.17280,106.82720
+9777,0,Home,103.247.9.9,,Other,,,2025-01-11T13:02:32.000Z,Other,Indonesia,-6.17280,106.82720
 4659,0,Home,103.247.9.9,,Other,,,2024-10-18T13:02:06.000Z,Other,Indonesia,-6.17280,106.82720
 7221,0,Home,193.186.4.146,https://www.google.com/,Chrome 131.0.0.0,,,2024-11-30T00:29:21.000Z,Other,Indonesia,-6.17280,106.82720
+9782,0,Home,193.186.4.144,https://www.google.com/,Chrome 124.0.0.0,,,2025-01-11T16:05:40.000Z,Other,Indonesia,-6.17280,106.82720
 5687,0,Home,103.247.9.9,,Other,,,2024-11-07T13:03:04.000Z,Other,Indonesia,-6.17280,106.82720
 6200,0,Home,103.247.9.9,,Other,,,2024-11-15T13:01:41.000Z,Other,Indonesia,-6.17280,106.82720
 9018,0,Home,103.247.9.9,,Other,,,2024-12-30T13:02:28.000Z,Other,Indonesia,-6.17280,106.82720
@@ -2828,6 +2881,7 @@ id,user_id,title,ip_address,referrer,agent,utm_source,utm_medium,hit_time,city,c
 5215,0,Home,103.247.9.9,,Other,,,2024-10-29T13:01:02.000Z,Other,Indonesia,-6.17280,106.82720
 5984,0,Home,103.247.9.9,,Other,,,2024-11-12T13:01:43.000Z,Other,Indonesia,-6.17280,106.82720
 9313,0,Home,103.247.9.9,,Other,,,2025-01-03T13:02:07.000Z,Other,Indonesia,-6.17280,106.82720
+9826,0,Home,103.247.9.9,,Other,,,2025-01-12T13:03:13.000Z,Other,Indonesia,-6.17280,106.82720
 5732,0,Home,103.247.9.9,,Other,,,2024-11-08T13:01:01.000Z,Other,Indonesia,-6.17280,106.82720
 7524,0,Home,103.247.9.9,,Other,,,2024-12-05T13:02:18.000Z,Other,Indonesia,-6.17280,106.82720
 8804,0,Home,103.247.9.9,,Other,,,2024-12-26T13:05:41.000Z,Other,Indonesia,-6.17280,106.82720
@@ -2842,6 +2896,7 @@ id,user_id,title,ip_address,referrer,agent,utm_source,utm_medium,hit_time,city,c
 6001,0,Home,72.14.201.146,https://www.google.com/,Chrome 130.0.0.0,,,2024-11-12T21:19:58.000Z,Other,Indonesia,-6.17280,106.82720
 8566,0,Home,103.247.9.9,,Other,,,2024-12-22T13:02:28.000Z,Other,Indonesia,-6.17280,106.82720
 4475,0,Home,103.247.9.9,,Other,,,2024-10-15T13:02:34.000Z,Other,Indonesia,-6.17280,106.82720
+9851,0,Home,193.186.4.147,https://www.google.com/,Chrome 131.0.0.0,,,2025-01-12T18:15:23.000Z,Other,Indonesia,-6.17280,106.82720
 7809,0,Home,103.247.9.9,,Other,,,2024-12-09T13:00:46.000Z,Other,Indonesia,-6.17280,106.82720
 9345,0,Home,72.14.201.145,https://www.google.com/,Chrome 131.0.0.0,,,2025-01-04T07:11:06.000Z,Other,Indonesia,-6.17280,106.82720
 5506,0,Home,103.247.9.9,,Other,,,2024-11-04T18:09:07.000Z,Other,Indonesia,-6.17280,106.82720
@@ -3330,6 +3385,7 @@ id,user_id,title,ip_address,referrer,agent,utm_source,utm_medium,hit_time,city,c
 4137,0,Baliho BRI Surian 2,57.141.3.7,,Other,,,2024-10-12T18:46:30.000Z,Other,Ireland,53.34710,-6.24470
 7214,0,Home,193.186.4.183,https://www.google.com/,Chrome 131.0.0.0,,,2024-11-29T21:21:09.000Z,Other,Ireland,53.34710,-6.24470
 4917,0,Home,193.186.4.176,https://www.google.com/,Chrome 129.0.0.0,,,2024-10-23T22:59:39.000Z,Other,Ireland,53.34710,-6.24470
+9791,0,Home,193.186.4.176,https://www.google.com/,Chrome 131.0.0.0,,,2025-01-11T21:34:58.000Z,Other,Ireland,53.34710,-6.24470
 3685,0,Baliho 2S-2 S. Landai PdgPjg,57.141.3.19,,Other,,,2024-10-07T13:37:09.000Z,Other,Ireland,53.34710,-6.24470
 3686,0,Baliho 2S-1 S. Landai PdgPjg,57.141.3.10,,Other,,,2024-10-07T13:38:18.000Z,Other,Ireland,53.34710,-6.24470
 3687,0,Baliho Pasar Sicincin,57.141.3.30,,Other,,,2024-10-07T13:40:38.000Z,Other,Ireland,53.34710,-6.24470
@@ -3557,6 +3613,7 @@ id,user_id,title,ip_address,referrer,agent,utm_source,utm_medium,hit_time,city,c
 5639,0,Home,185.180.141.55,,Chrome 66.0.3359.117,,,2024-11-06T21:54:53.000Z,Other,Portugal,38.70570,-9.13590
 8730,0,Home,185.180.141.4,http://abangadek-adv.com/,Chrome 66.0.3359.117,,,2024-12-25T08:07:06.000Z,Other,Portugal,38.70570,-9.13590
 5659,0,Home,45.156.131.29,http://abangadek-adv.com/,Chrome 60.0.3112.113,,,2024-11-07T04:28:30.000Z,Other,Portugal,38.70570,-9.13590
+9767,0,Home,45.156.128.67,,Chrome 66.0.3359.117,,,2025-01-11T08:41:40.000Z,Other,Portugal,38.70570,-9.13590
 2385,0,Home,45.156.130.43,,Chrome 60.0.3112.113,,,2024-09-17T07:32:51.000Z,Other,Portugal,38.70570,-9.13590
 2386,0,Home,45.156.130.40,,Chrome 60.0.3112.113,,,2024-09-17T07:32:54.000Z,Other,Portugal,38.70570,-9.13590
 4726,0,Home,185.117.225.235,,Mozilla 5.0,,,2024-10-20T03:58:38.000Z,Other,Portugal,38.70570,-9.13590
@@ -3577,6 +3634,7 @@ id,user_id,title,ip_address,referrer,agent,utm_source,utm_medium,hit_time,city,c
 9676,0,Home,188.18.238.31,https://yandex.ru/,Chrome 131.0.0.0,,,2025-01-09T01:44:37.000Z,Chelyabinsk,Russia,55.15810,61.43130
 8963,0,Home,92.49.171.32,https://abangadek-adv.com/,Chrome 130.0.0.0,,,2024-12-29T20:36:39.000Z,Energetik,Russia,51.74850,58.78900
 9241,0,Home,79.173.92.61,https://yandex.ru/,Opera 114.0.0.0,,,2025-01-02T11:28:26.000Z,Gatchina,Russia,59.57910,30.11540
+9789,0,Home,79.173.88.216,https://yandex.ru/,Chrome 128.0.0.0,,,2025-01-11T20:33:31.000Z,Gatchina,Russia,59.57910,30.11540
 6515,0,Home,79.173.90.50,https://yandex.ru/,Chrome 105.0.0.0,,,2024-11-18T22:43:45.000Z,Gatchina,Russia,59.57910,30.11540
 8334,0,Home,79.173.90.238,https://yandex.ru/,Chrome 131.0.0.0,,,2024-12-18T23:24:52.000Z,Gatchina,Russia,59.57910,30.11540
 8652,0,Home,79.173.88.87,https://yandex.ru/,Chrome 128.0.0.0,,,2024-12-24T05:20:00.000Z,Gatchina,Russia,59.57910,30.11540
@@ -3702,9 +3760,11 @@ id,user_id,title,ip_address,referrer,agent,utm_source,utm_medium,hit_time,city,c
 6180,0,Baliho 2S-1 Kasang - Stasiun Duku,5.255.231.44,,YandexBot,,,2024-11-15T09:45:02.000Z,Other,Russia,55.73860,37.60680
 6181,0,Baliho,5.255.231.106,,YandexBot,,,2024-11-15T10:01:30.000Z,Other,Russia,55.73860,37.60680
 5670,0,Home,188.143.169.41,,Firefox 126.0,,,2024-11-07T09:43:36.000Z,Other,Russia,55.73860,37.60680
+9766,0,Tentang Kami,5.255.231.123,,YandexBot,,,2025-01-11T08:15:33.000Z,Other,Russia,55.73860,37.60680
 5671,0,Home,188.143.169.41,,Firefox 126.0,,,2024-11-07T09:43:47.000Z,Other,Russia,55.73860,37.60680
 8231,0,Interior,5.255.231.83,,YandexBot,,,2024-12-17T15:12:20.000Z,Other,Russia,55.73860,37.60680
 4649,0,Home,213.108.2.185,,Chrome 123.0.6312.87,,,2024-10-18T06:39:48.000Z,Other,Russia,55.73860,37.60680
+9770,0,Klien Kami 2,213.180.203.241,,YandexBot,,,2025-01-11T09:42:13.000Z,Other,Russia,55.73860,37.60680
 8749,0,Home,213.180.203.23,,YandexBot,,,2024-12-25T15:22:37.000Z,Other,Russia,55.73860,37.60680
 8496,0,Home,95.108.213.204,,YandexBot,,,2024-12-20T23:01:42.000Z,Other,Russia,55.73860,37.60680
 4657,0,Home,194.104.10.105,,Chrome 123.0.6312.87,,,2024-10-18T10:16:07.000Z,Other,Russia,55.73860,37.60680
@@ -3749,12 +3809,14 @@ id,user_id,title,ip_address,referrer,agent,utm_source,utm_medium,hit_time,city,c
 3929,0,Home,188.120.230.205,,Other,,,2024-10-10T22:20:45.000Z,Other,Russia,55.73860,37.60680
 7001,0,Home,213.180.203.61,,YandexBot,,,2024-11-26T20:24:32.000Z,Other,Russia,55.73860,37.60680
 7257,0,Home,5.255.231.76,,YandexBot,,,2024-11-30T17:59:03.000Z,Other,Russia,55.73860,37.60680
+9817,0,Home,5.255.231.182,,YandexBot,,,2025-01-12T10:18:37.000Z,Other,Russia,55.73860,37.60680
 5466,0,Klien Kami 2,213.180.203.215,,YandexBot,,,2024-11-03T16:02:26.000Z,Other,Russia,55.73860,37.60680
 4705,0,Home,5.255.231.146,,YandexBot,,,2024-10-19T16:55:45.000Z,Other,Russia,55.73860,37.60680
 5474,0,Klien Kami 4,213.180.203.90,,YandexBot,,,2024-11-04T03:11:08.000Z,Other,Russia,55.73860,37.60680
 3172,0,Home,95.108.213.144,,YandexBot,,,2024-09-29T01:53:29.000Z,Other,Russia,55.73860,37.60680
 9060,0,Home,185.173.37.194,https://abangadek-adv.com/,Chrome 131.0.0.0,,,2024-12-31T09:20:23.000Z,Other,Russia,55.73860,37.60680
 3173,0,Home,5.255.231.189,,YandexBot,,,2024-09-29T01:58:59.000Z,Other,Russia,55.73860,37.60680
+9830,0,Home,77.74.177.118,,Chrome 110.0.0.0,,,2025-01-12T13:55:39.000Z,Other,Russia,55.73860,37.60680
 4712,0,Home,95.108.213.140,,YandexBot,,,2024-10-19T21:31:53.000Z,Other,Russia,55.73860,37.60680
 4713,0,Tentang Kami,95.108.213.205,,YandexBot,,,2024-10-19T21:33:44.000Z,Other,Russia,55.73860,37.60680
 7273,0,Home,212.66.41.188,https://abangadek-adv.com/,Chrome 125.0.0.0,,,2024-12-01T01:32:21.000Z,Other,Russia,55.73860,37.60680
@@ -4220,6 +4282,7 @@ id,user_id,title,ip_address,referrer,agent,utm_source,utm_medium,hit_time,city,c
 6080,0,Home,212.34.154.231,,Chrome 120.0.0.0,,,2024-11-14T03:48:39.000Z,Other,Spain,40.41720,-3.68400
 6081,0,Login,212.34.154.231,,Chrome 120.0.0.0,,,2024-11-14T03:48:40.000Z,Other,Spain,40.41720,-3.68400
 6393,0,Home,185.157.212.96,https://abangadek-adv.com/,Chrome 103.0.5060.66,,,2024-11-17T20:09:49.000Z,Other,Spain,40.41720,-3.68400
+9762,0,Home,94.247.172.129,,Mozilla 5.0,,,2025-01-11T05:16:54.000Z,Falkenberg,Sweden,56.90660,12.50300
 9346,0,Home,94.247.172.129,,Mozilla 5.0,,,2025-01-04T07:14:20.000Z,Falkenberg,Sweden,56.90660,12.50300
 8848,0,Home,94.247.172.129,,Mozilla 5.0,,,2024-12-27T08:20:25.000Z,Falkenberg,Sweden,56.90660,12.50300
 6306,0,Home,94.247.172.129,,Mozilla 5.0,,,2024-11-16T08:58:26.000Z,Falkenberg,Sweden,56.90660,12.50300
@@ -4239,6 +4302,7 @@ id,user_id,title,ip_address,referrer,agent,utm_source,utm_medium,hit_time,city,c
 9496,0,Home,130.255.166.97,http://abangadek-adv.com/,Firefox 123,,,2025-01-05T11:10:28.000Z,Other,Sweden,59.32470,18.05600
 3369,0,Home,185.12.149.40,http://abangadek-adv.com/,Firefox 123,,,2024-10-02T00:52:44.000Z,Other,Sweden,59.32470,18.05600
 5934,0,Home,5.133.192.105,,Chrome 105.0.0.0,,,2024-11-11T23:26:00.000Z,Other,Sweden,59.32470,18.05600
+9774,0,Home,192.36.109.70,http://abangadek-adv.com/,Chrome 112.0.5615.136,,,2025-01-11T12:18:58.000Z,Other,Sweden,59.32470,18.05600
 5432,0,Home,192.36.24.172,http://abangadek-adv.com/,Chrome 115.0.0.0,,,2024-11-02T11:02:24.000Z,Other,Sweden,59.32470,18.05600
 6476,0,Home,5.133.192.108,,Chrome 105.0.0.0,,,2024-11-18T05:31:57.000Z,Other,Sweden,59.32470,18.05600
 4943,0,Home,5.133.192.136,,Chrome 105.0.0.0,,,2024-10-24T08:29:42.000Z,Other,Sweden,59.32470,18.05600
@@ -4282,6 +4346,7 @@ id,user_id,title,ip_address,referrer,agent,utm_source,utm_medium,hit_time,city,c
 5891,0,Home,51.154.37.38,,Chrome 130.0.0.0,,,2024-11-11T05:11:18.000Z,Zurich,Switzerland,47.38570,8.53480
 2357,0,Home,146.70.134.107,,Chrome 110.0.0.0,,,2024-09-17T03:18:04.000Z,Zurich,Switzerland,47.40440,8.43630
 7507,0,Home,152.89.162.235,,Chrome 84.0.4147.89,,,2024-12-05T03:15:01.000Z,Zurich,Switzerland,47.40440,8.43630
+9845,0,Home,179.43.191.19,https://google.com,Chrome 116.0.0.0,,,2025-01-12T16:09:00.000Z,Zurich,Switzerland,47.39340,8.51630
 7627,0,Home,193.36.117.72,,Chrome 62.0.3202.84,,,2024-12-07T04:03:41.000Z,Zurich,Switzerland,47.36820,8.56710
 9268,0,Home,123.192.225.108,,Chrome 131.0.0.0,,,2025-01-03T03:33:59.000Z,Taichung,Taiwan,24.14400,120.68440
 3874,0,Home,103.59.108.61,,Edge 44.18363.8131,,,2024-10-10T09:46:35.000Z,Taipei,Taiwan,25.05040,121.53240
@@ -4440,6 +4505,8 @@ id,user_id,title,ip_address,referrer,agent,utm_source,utm_medium,hit_time,city,c
 5148,0,Home,31.202.183.172,https://abangadek-adv.com/,Chrome 124.0.6367.61,,,2024-10-28T01:12:05.000Z,Kharkiv,Ukraine,49.98200,36.25660
 3149,0,Home,195.226.192.200,https://abangadek-adv.com/,Chrome 103.0.5060.66,,,2024-09-28T19:30:02.000Z,Khmelnytskyi,Ukraine,49.41950,26.99590
 2345,0,Home,178.159.37.4,https://abangadek-adv.com/,Chrome 124.0.6367.63,,,2024-09-16T22:33:03.000Z,Kyiv,Ukraine,50.45800,30.53030
+9827,0,Home,79.110.134.65,https://abangadek-adv.com/,Chrome 103.0.0.0,,,2025-01-12T13:23:26.000Z,Kyiv,Ukraine,50.45800,30.53030
+9828,0,Login,79.110.134.65,https://abangadek-adv.com/login,Chrome 103.0.0.0,,,2025-01-12T13:23:28.000Z,Kyiv,Ukraine,50.45800,30.53030
 3201,0,Home,178.159.37.49,https://abangadek-adv.com/,Chrome 124.0.6367.62,,,2024-09-29T12:23:40.000Z,Kyiv,Ukraine,50.45800,30.53030
 8606,0,Home,178.159.37.4,https://abangadek-adv.com/,Chrome 124.0.6367.119,,,2024-12-23T10:31:20.000Z,Kyiv,Ukraine,50.45800,30.53030
 8904,0,Home,178.159.37.156,https://abangadek-adv.com/,Chrome 124.0.6367.60,,,2024-12-27T23:57:39.000Z,Kyiv,Ukraine,50.45800,30.53030
@@ -4548,6 +4615,7 @@ id,user_id,title,ip_address,referrer,agent,utm_source,utm_medium,hit_time,city,c
 2329,0,Client,185.191.171.19,,Mozilla 5.0,,,2024-09-16T16:28:54.000Z,Other,United Kingdom,51.49640,-0.12240
 4379,0,Home,185.191.171.11,,Mozilla 5.0,,,2024-10-14T12:45:19.000Z,Other,United Kingdom,51.49640,-0.12240
 7202,0,Klien Kami 4,185.191.171.2,,Mozilla 5.0,,,2024-11-29T15:17:28.000Z,Other,United Kingdom,51.49640,-0.12240
+9764,0,Produk,185.191.171.16,,Mozilla 5.0,,,2025-01-11T06:17:42.000Z,Other,United Kingdom,51.49640,-0.12240
 4389,0,Produk,185.191.171.5,,Mozilla 5.0,,,2024-10-14T13:03:22.000Z,Other,United Kingdom,51.49640,-0.12240
 7719,0,Klien Kami 4,185.191.171.8,,Mozilla 5.0,,,2024-12-07T23:31:58.000Z,Other,United Kingdom,51.49640,-0.12240
 7979,0,Baliho 2S-1 Ilyas Yakub Pessel,185.191.171.13,,Mozilla 5.0,,,2024-12-12T19:56:20.000Z,Other,United Kingdom,51.49640,-0.12240
@@ -4607,6 +4675,7 @@ id,user_id,title,ip_address,referrer,agent,utm_source,utm_medium,hit_time,city,c
 8816,0,Home,5.102.173.71,,Mozilla 5.0,,,2024-12-26T15:57:48.000Z,Other,United Kingdom,51.49640,-0.12240
 4727,0,Baliho 2S-1 Kasang - Stasiun Duku,185.191.171.15,,Mozilla 5.0,,,2024-10-20T04:29:07.000Z,Other,United Kingdom,51.49640,-0.12240
 9336,0,Baliho 2S-2 Ilyas Yakub Pessel,185.191.171.11,,Mozilla 5.0,,,2025-01-04T04:03:33.000Z,Other,United Kingdom,51.49640,-0.12240
+9849,0,Baliho Tarusan Pessel 1,185.191.171.1,,Mozilla 5.0,,,2025-01-12T17:39:48.000Z,Other,United Kingdom,51.49640,-0.12240
 6012,0,Baliho 2S-1 Siteba Padang,185.191.171.6,,Mozilla 5.0,,,2024-11-12T22:55:19.000Z,Other,United Kingdom,51.49640,-0.12240
 4990,0,Desain Interior 3,185.191.171.15,,Mozilla 5.0,,,2024-10-25T05:44:47.000Z,Other,United Kingdom,51.49640,-0.12240
 7807,0,Baliho 2S-1 Kasang - Stasiun Duku,185.170.167.18,,Mozilla 5.0,,,2024-12-09T12:21:03.000Z,Other,United Kingdom,51.49640,-0.12240
@@ -4800,6 +4869,7 @@ id,user_id,title,ip_address,referrer,agent,utm_source,utm_medium,hit_time,city,c
 3365,0,Produk,3.238.30.36,,Other,,,2024-10-01T23:58:22.000Z,Ashburn,United States,39.04690,-77.49030
 7205,0,Home,18.97.9.174,,Other,,,2024-11-29T15:39:30.000Z,Ashburn,United States,39.04690,-77.49030
 8229,0,Baliho 2S-2 Siteba Padang,85.208.96.201,,Mozilla 5.0,,,2024-12-17T13:52:28.000Z,Ashburn,United States,39.01800,-77.53900
+9765,0,Baliho,85.208.96.194,,Mozilla 5.0,,,2025-01-11T07:09:16.000Z,Ashburn,United States,39.01800,-77.53900
 3366,0,Login,3.238.30.36,,Other,,,2024-10-02T00:07:07.000Z,Ashburn,United States,39.04690,-77.49030
 4902,0,Printing,54.91.120.254,,Firefox 42.0,,,2024-10-23T17:36:58.000Z,Ashburn,United States,39.04690,-77.49030
 4903,0,Tentang Kami,54.91.120.254,,Firefox 42.0,,,2024-10-23T17:37:06.000Z,Ashburn,United States,39.04690,-77.49030
@@ -4827,6 +4897,7 @@ id,user_id,title,ip_address,referrer,agent,utm_source,utm_medium,hit_time,city,c
 3125,0,Home,98.81.209.249,,Chrome 83.0.4103.61,,,2024-09-28T11:57:58.000Z,Ashburn,United States,39.04690,-77.49030
 3637,0,Baliho Ombilin Singkarak,85.208.96.196,,Mozilla 5.0,,,2024-10-06T05:51:16.000Z,Ashburn,United States,39.01800,-77.53900
 7989,0,Test Printing 1,85.208.96.197,,Mozilla 5.0,,,2024-12-12T22:30:52.000Z,Ashburn,United States,39.01800,-77.53900
+9781,0,Baliho 2S-1 Jhoni Anwar Padang,85.208.96.204,,Mozilla 5.0,,,2025-01-11T15:46:41.000Z,Ashburn,United States,39.01800,-77.53900
 2614,0,Klien Kami 3,85.208.96.200,,Mozilla 5.0,,,2024-09-22T10:09:38.000Z,Ashburn,United States,39.01800,-77.53900
 9014,0,Baliho 2S-2 Kasang - Stasiun Duku,85.208.96.208,,Mozilla 5.0,,,2024-12-30T12:09:18.000Z,Ashburn,United States,39.01800,-77.53900
 3639,0,Baliho 2S-1 Siteba Padang,85.208.96.210,,Mozilla 5.0,,,2024-10-06T09:26:53.000Z,Ashburn,United States,39.01800,-77.53900
@@ -5219,6 +5290,7 @@ id,user_id,title,ip_address,referrer,agent,utm_source,utm_medium,hit_time,city,c
 8007,0,Home,35.167.95.135,http://abangadek-adv.com/,Chrome 74.0.3729.169,,,2024-12-13T09:38:24.000Z,Boardman,United States,45.82340,-119.72570
 6474,0,Home,34.221.187.242,,Chrome 119.0.0.0,,,2024-11-18T04:27:04.000Z,Boardman,United States,45.82340,-119.72570
 7258,0,Home,35.92.46.177,,Chrome 126.0.0.0,,,2024-11-30T19:11:46.000Z,Boardman,United States,45.82340,-119.72570
+9819,0,Home,44.243.130.162,http://abangadek-adv.com/,Chrome 74.0.3729.169,,,2025-01-12T10:31:04.000Z,Boardman,United States,45.82340,-119.72570
 6493,0,Home,34.222.207.168,,Internet Explorer 6.0,,,2024-11-18T12:53:15.000Z,Boardman,United States,45.82340,-119.72570
 9566,0,Home,44.243.240.71,http://abangadek-adv.com/,Chrome 74.0.3729.169,,,2025-01-06T09:18:49.000Z,Boardman,United States,45.82340,-119.72570
 7010,0,Home,44.242.155.73,,Internet Explorer 6.0,,,2024-11-27T00:48:21.000Z,Boardman,United States,45.82340,-119.72570
@@ -5263,6 +5335,7 @@ id,user_id,title,ip_address,referrer,agent,utm_source,utm_medium,hit_time,city,c
 2043,0,Home,35.85.246.183,,Mozilla 5.0,,,2024-09-12T03:13:37.000Z,Boardman,United States,45.82340,-119.72570
 5371,0,Home,44.242.155.73,,Internet Explorer 6.0,,,2024-10-31T11:59:57.000Z,Boardman,United States,45.82340,-119.72570
 8188,0,Home,34.216.10.164,,Chrome 121.0.0.0,,,2024-12-16T19:50:06.000Z,Boardman,United States,45.82340,-119.72570
+9855,0,Home,206.232.2.233,,Firefox 133.0,,,2025-01-12T19:29:27.000Z,Boca Raton,United States,26.35940,-80.07710
 2816,0,Baliho,40.77.167.144,,Bing,,,2024-09-25T03:11:50.000Z,Boydton,United States,36.65340,-78.37500
 4352,0,Baliho Bunga Pasang Salido 2,52.167.144.194,,Bing,,,2024-10-14T07:24:42.000Z,Boydton,United States,36.65340,-78.37500
 5632,0,Baliho Pasar Sicincin,52.167.144.147,,Bing,,,2024-11-06T18:52:09.000Z,Boydton,United States,36.65340,-78.37500
@@ -5320,6 +5393,7 @@ id,user_id,title,ip_address,referrer,agent,utm_source,utm_medium,hit_time,city,c
 6941,0,Home,52.167.144.231,,Bing,,,2024-11-25T20:43:57.000Z,Boydton,United States,36.65340,-78.37500
 2846,0,Baliho Depan INS Kayu Tanam,52.167.144.182,,Bing,,,2024-09-25T10:11:49.000Z,Boydton,United States,36.65340,-78.37500
 4894,0,Baliho 2S-1 Ilyas Yakub Pessel,40.77.167.50,,Bing,,,2024-10-23T12:05:32.000Z,Boydton,United States,36.65340,-78.37500
+9758,0,Baliho 2S-2 S. Landai PdgPjg,40.77.167.51,,Bing,,,2025-01-11T01:54:02.000Z,Boydton,United States,36.65340,-78.37500
 9247,0,Baliho,52.167.144.20,,Bing,,,2025-01-02T13:58:39.000Z,Boydton,United States,36.65340,-78.37500
 4128,0,Baliho 2S-2 S. Landai PdgPjg,40.77.167.56,,Bing,,,2024-10-12T12:53:21.000Z,Boydton,United States,36.65340,-78.37500
 4129,0,Baliho By Pass Azis Chan,40.77.167.68,,Bing,,,2024-10-12T13:09:20.000Z,Boydton,United States,36.65340,-78.37500
@@ -5356,6 +5430,7 @@ id,user_id,title,ip_address,referrer,agent,utm_source,utm_medium,hit_time,city,c
 3896,0,Baliho 2S-1 Sp Rumbio Solok,52.167.144.220,,Bing,,,2024-10-10T14:33:35.000Z,Boydton,United States,36.65340,-78.37500
 4152,0,Baliho 2S-2 Siteba Padang,52.167.144.197,,Bing,,,2024-10-13T00:14:24.000Z,Boydton,United States,36.65340,-78.37500
 5944,0,Baliho 2S-2 Kuok Btg Kapas,40.77.167.1,,Bing,,,2024-11-12T02:26:03.000Z,Boydton,United States,36.65340,-78.37500
+9785,0,Baliho By Pass Azis Chan,40.77.167.68,,Bing,,,2025-01-11T17:03:09.000Z,Boydton,United States,36.65340,-78.37500
 2106,0,Home,52.167.144.228,,Bing,,,2024-09-13T01:47:22.000Z,Boydton,United States,36.65340,-78.37500
 5178,0,Baliho 2S-2 S. Landai PdgPjg,52.167.144.157,,Bing,,,2024-10-28T11:36:08.000Z,Boydton,United States,36.65340,-78.37500
 4155,0,Baliho 2S-1 Ilyas Yakub Pessel,52.167.144.176,,Bing,,,2024-10-13T02:55:46.000Z,Boydton,United States,36.65340,-78.37500
@@ -5441,6 +5516,7 @@ id,user_id,title,ip_address,referrer,agent,utm_source,utm_medium,hit_time,city,c
 3933,0,Home,40.77.167.77,,Bing,,,2024-10-11T02:04:31.000Z,Boydton,United States,36.65340,-78.37500
 4190,0,Baliho 2S-1 Sutomo Padang,52.167.144.221,,Bing,,,2024-10-13T08:33:12.000Z,Boydton,United States,36.65340,-78.37500
 5214,0,Home,52.167.144.147,,Bing,,,2024-10-29T12:43:06.000Z,Boydton,United States,36.65340,-78.37500
+9823,0,Tentang Kami,40.77.167.18,,Bing,,,2025-01-12T11:55:08.000Z,Boydton,United States,36.65340,-78.37500
 4448,0,Baliho 2S-2 Siteba Padang,52.167.144.195,,Bing,,,2024-10-15T05:30:19.000Z,Boydton,United States,36.65340,-78.37500
 2913,0,Home,52.167.144.219,,Bing,,,2024-09-25T22:18:19.000Z,Boydton,United States,36.65340,-78.37500
 5985,0,Baliho 2S-2 Ilyas Yakub Pessel,40.77.167.30,,Bing,,,2024-11-12T13:14:33.000Z,Boydton,United States,36.65340,-78.37500
@@ -5819,6 +5895,7 @@ id,user_id,title,ip_address,referrer,agent,utm_source,utm_medium,hit_time,city,c
 5669,0,Home,45.55.41.148,,Mozilla 5.0,,,2024-11-07T09:34:28.000Z,Clifton,United States,40.83640,-74.14030
 2857,0,Home,165.227.184.120,,Chrome 126.0.0.0,,,2024-09-25T12:27:54.000Z,Clifton,United States,40.83640,-74.14030
 5673,0,Home,159.203.129.163,,Mozilla 5.0,,,2024-11-07T09:48:28.000Z,Clifton,United States,40.83640,-74.14030
+9773,0,Home,104.131.163.142,,Mozilla 5.0,,,2025-01-11T12:03:40.000Z,Clifton,United States,40.83640,-74.14030
 5697,0,Login,45.55.84.147,,Chrome 124.0.0.0,,,2024-11-07T15:35:47.000Z,Clifton,United States,40.83640,-74.14030
 5703,0,Interior,138.197.115.33,,Chrome 124.0.0.0,,,2024-11-07T17:15:00.000Z,Clifton,United States,40.83640,-74.14030
 7250,0,Home,167.172.29.96,,Chrome 129.0.0.0,,,2024-11-30T12:39:23.000Z,Clifton,United States,40.83640,-74.14030
@@ -5926,6 +6003,8 @@ id,user_id,title,ip_address,referrer,agent,utm_source,utm_medium,hit_time,city,c
 2143,0,Home,34.71.214.216,,Chrome 120.0.0.0,,,2024-09-13T15:40:46.000Z,Council Bluffs,United States,41.25910,-95.85170
 3935,0,Login,34.171.119.235,,Chrome 127.0.0.0,,,2024-10-11T03:27:37.000Z,Council Bluffs,United States,41.25910,-95.85170
 6781,0,Home,34.72.136.108,,Chrome 78.0.3904.108,,,2024-11-22T18:35:13.000Z,Council Bluffs,United States,41.25910,-95.85170
+9856,0,Home,104.197.69.115,http://abangadek-adv.com/,Chrome 125.0.6422.60,,,2025-01-12T19:45:30.000Z,Council Bluffs,United States,41.25910,-95.85170
+9857,0,Login,104.197.69.115,https://abangadek-adv.com/,Chrome 125.0.6422.60,,,2025-01-12T19:45:58.000Z,Council Bluffs,United States,41.25910,-95.85170
 3204,0,Home,34.122.176.176,http://abangadek-adv.com/,Other,,,2024-09-29T12:54:16.000Z,Council Bluffs,United States,41.25910,-95.85170
 6796,0,Home,34.135.84.238,,Chrome 78.0.3904.108,,,2024-11-23T02:30:36.000Z,Council Bluffs,United States,41.25910,-95.85170
 3726,0,Home,34.122.25.112,http://abangadek-adv.com/,Other,,,2024-10-07T21:58:48.000Z,Council Bluffs,United States,41.25910,-95.85170
@@ -6020,6 +6099,7 @@ id,user_id,title,ip_address,referrer,agent,utm_source,utm_medium,hit_time,city,c
 5895,0,Home,199.127.56.236,,Chrome 121.0.6167.85,,,2024-11-11T05:48:50.000Z,Las Vegas,United States,36.10200,-115.14470
 3913,0,Home,34.125.230.24,,Chrome 53.0.2820.59,,,2024-10-10T19:05:25.000Z,Las Vegas,United States,36.16850,-115.11640
 5194,0,Home,45.61.141.94,,Other,,,2024-10-28T23:37:49.000Z,Las Vegas,United States,36.10200,-115.14470
+9761,0,Home,104.166.80.87,,Firefox 120.0,,,2025-01-11T05:10:02.000Z,Los Angeles,United States,34.05440,-118.24410
 3120,0,Home,35.235.99.75,http://abangadek-adv.com/,Other,,,2024-09-28T09:13:44.000Z,Los Angeles,United States,34.05440,-118.24410
 9529,0,Home,107.172.55.51,,Edge 44.18363.8131,,,2025-01-05T22:32:40.000Z,Los Angeles,United States,34.05440,-118.24410
 9530,0,Login,38.152.155.209,https://abangadek-adv.com/,Edge 44.18363.8131,,,2025-01-05T22:32:42.000Z,Los Angeles,United States,34.05440,-118.24410
@@ -6031,11 +6111,20 @@ id,user_id,title,ip_address,referrer,agent,utm_source,utm_medium,hit_time,city,c
 9535,0,Interior,38.152.155.209,https://abangadek-adv.com/,Edge 44.18363.8131,,,2025-01-05T22:33:14.000Z,Los Angeles,United States,34.05440,-118.24410
 9536,0,Printing,38.152.155.209,https://abangadek-adv.com/,Edge 44.18363.8131,,,2025-01-05T22:33:23.000Z,Los Angeles,United States,34.05440,-118.24410
 9537,0,Produk,38.152.155.209,https://abangadek-adv.com/,Edge 44.18363.8131,,,2025-01-05T22:33:29.000Z,Los Angeles,United States,34.05440,-118.24410
+9800,0,Home,104.166.80.62,,Firefox 120.0,,,2025-01-12T05:44:05.000Z,Los Angeles,United States,34.05440,-118.24410
 8527,0,Home,74.48.84.236,,Chrome 127.0.0.0,,,2024-12-21T13:46:48.000Z,Los Angeles,United States,34.05440,-118.24410
+9809,0,Home,166.88.172.191,http://abangadek-adv.com/contact-us.html,Chrome 114.0.0.0,,,2025-01-12T10:04:21.000Z,Los Angeles,United States,34.05440,-118.24410
+9810,0,Tentang Kami,166.88.172.191,http://abangadek-adv.com/contact-us.html,Chrome 114.0.0.0,,,2025-01-12T10:04:23.000Z,Los Angeles,United States,34.05440,-118.24410
+9811,0,Interior,166.88.172.191,http://abangadek-adv.com/contact-us.html,Chrome 114.0.0.0,,,2025-01-12T10:04:29.000Z,Los Angeles,United States,34.05440,-118.24410
+9812,0,Client,166.88.172.191,http://abangadek-adv.com/contact-us.html,Chrome 114.0.0.0,,,2025-01-12T10:04:32.000Z,Los Angeles,United States,34.05440,-118.24410
 4437,0,Home,136.144.33.21,,Opera 89.0.4447.51,,,2024-10-15T04:44:11.000Z,Los Angeles,United States,34.05440,-118.24410
+9813,0,Login,166.88.172.191,http://abangadek-adv.com/contact-us.html,Chrome 114.0.0.0,,,2025-01-12T10:04:35.000Z,Los Angeles,United States,34.05440,-118.24410
 4438,0,Login,37.140.223.30,https://abangadek-adv.com/,Opera 89.0.4447.51,,,2024-10-15T04:44:12.000Z,Los Angeles,United States,34.05440,-118.24410
+9814,0,Produk,166.88.172.191,http://abangadek-adv.com/contact-us.html,Chrome 114.0.0.0,,,2025-01-12T10:04:43.000Z,Los Angeles,United States,34.05440,-118.24410
 4439,0,Home,37.140.223.74,https://abangadek-adv.com/,Opera 89.0.4447.51,,,2024-10-15T04:44:13.000Z,Los Angeles,United States,34.05440,-118.24410
+9815,0,Printing,166.88.172.191,http://abangadek-adv.com/contact-us.html,Chrome 114.0.0.0,,,2025-01-12T10:04:46.000Z,Los Angeles,United States,34.05440,-118.24410
 4440,0,Client,37.140.223.82,https://abangadek-adv.com/,Opera 89.0.4447.51,,,2024-10-15T04:44:14.000Z,Los Angeles,United States,34.05440,-118.24410
+9816,0,Baliho,166.88.172.191,http://abangadek-adv.com/contact-us.html,Chrome 114.0.0.0,,,2025-01-12T10:04:49.000Z,Los Angeles,United States,34.05440,-118.24410
 4441,0,Baliho,172.245.102.22,https://abangadek-adv.com/,Opera 89.0.4447.51,,,2024-10-15T04:44:15.000Z,Los Angeles,United States,34.05440,-118.24410
 4442,0,Tentang Kami,193.36.225.206,https://abangadek-adv.com/,Opera 89.0.4447.51,,,2024-10-15T04:44:17.000Z,Los Angeles,United States,34.05440,-118.24410
 4443,0,Interior,37.140.223.75,https://abangadek-adv.com/,Opera 89.0.4447.51,,,2024-10-15T04:44:18.000Z,Los Angeles,United States,34.05440,-118.24410
@@ -6505,6 +6594,7 @@ id,user_id,title,ip_address,referrer,agent,utm_source,utm_medium,hit_time,city,c
 6687,0,Desain Interior 2,69.160.160.53,,Chrome 79.0.3945.130,,,2024-11-21T13:21:20.000Z,Other,United States,37.75100,-97.82200
 8223,0,Baliho,216.244.66.202,,Mozilla 5.0,,,2024-12-17T09:56:08.000Z,Other,United States,37.75100,-97.82200
 8479,0,Baliho,216.244.66.202,,Mozilla 5.0,,,2024-12-20T09:58:09.000Z,Other,United States,37.75100,-97.82200
+9759,0,Home,49.51.233.95,http://abangadek-adv.com,Safari 604.1,,,2025-01-11T03:24:00.000Z,Other,United States,34.05440,-118.24400
 6688,0,Tentang Kami,69.160.160.53,,Chrome 79.0.3945.130,,,2024-11-21T13:21:21.000Z,Other,United States,37.75100,-97.82200
 7456,0,Home,216.244.66.202,,Mozilla 5.0,,,2024-12-04T10:56:02.000Z,Other,United States,37.75100,-97.82200
 3105,0,Test Printing 1,66.249.71.167,,Googlebot,,,2024-09-28T04:47:55.000Z,Other,United States,37.75100,-97.82200
@@ -6547,6 +6637,7 @@ id,user_id,title,ip_address,referrer,agent,utm_source,utm_medium,hit_time,city,c
 7465,0,Home,205.169.39.38,https://bing.com/,Chrome 117.0.5938.132,,,2024-12-04T11:28:17.000Z,Other,United States,37.75100,-97.82200
 8233,0,Produk,216.244.66.202,,Mozilla 5.0,,,2024-12-17T15:59:17.000Z,Other,United States,37.75100,-97.82200
 9513,0,Baliho 2S-2 Jalan Ilyas Yakub Dua Pessel,216.244.66.202,,Mozilla 5.0,,,2025-01-05T19:03:05.000Z,Other,United States,37.75100,-97.82200
+9769,0,Home,34.96.52.10,,Safari 604.1,,,2025-01-11T09:13:50.000Z,Other,United States,37.75100,-97.82200
 4394,0,Baliho Kambang Pessel 1,157.55.39.49,,Bing,,,2024-10-14T15:24:29.000Z,Other,United States,47.60340,-122.34140
 4650,0,Home,49.51.206.130,http://www.abangadek-adv.com,Safari 604.1,,,2024-10-18T07:01:31.000Z,Other,United States,34.05440,-118.24400
 5418,0,Baliho 2S-1 Sutomo Padang,157.55.39.193,,Bing,,,2024-11-01T21:31:31.000Z,Other,United States,47.60340,-122.34140
@@ -6592,6 +6683,7 @@ id,user_id,title,ip_address,referrer,agent,utm_source,utm_medium,hit_time,city,c
 6960,0,Home,205.169.39.15,http://abangadek-adv.com,Chrome 106.0.0.0,,,2024-11-26T02:59:47.000Z,Other,United States,37.75100,-97.82200
 7216,0,Home,49.51.203.164,http://abangadek-adv.com,Safari 604.1,,,2024-11-29T22:01:29.000Z,Other,United States,34.05440,-118.24400
 7984,0,Home,66.249.65.167,,Googlebot,,,2024-12-12T21:09:48.000Z,Other,United States,37.75100,-97.82200
+9776,0,Desain Interior ,66.249.69.98,,Googlebot,,,2025-01-11T12:42:57.000Z,Other,United States,37.75100,-97.82200
 2353,0,Klien Kami,64.233.173.148,,Chrome 59.0.3071.125,,,2024-09-17T01:14:08.000Z,Other,United States,37.75100,-97.82200
 2609,0,Home,107.151.182.54,http://abangadek-adv.com/,Chrome 60.0.3112.113,,,2024-09-22T08:05:52.000Z,Other,United States,37.75100,-97.82200
 5169,0,Client,66.249.79.231,,Googlebot,,,2024-10-28T05:51:54.000Z,Other,United States,37.75100,-97.82200
@@ -6618,6 +6710,7 @@ id,user_id,title,ip_address,referrer,agent,utm_source,utm_medium,hit_time,city,c
 5175,0,Home,52.149.60.125,,Chrome 76.0.3809.100,,,2024-10-28T09:56:37.000Z,Other,United States,47.60340,-122.34140
 4408,0,Baliho Ombilin Singkarak,157.55.39.62,,Bing,,,2024-10-14T19:07:44.000Z,Other,United States,47.60340,-122.34140
 8248,0,Home,216.244.66.202,,Mozilla 5.0,,,2024-12-17T18:21:09.000Z,Other,United States,37.75100,-97.82200
+9784,0,Home,198.235.24.162,,Other,,,2025-01-11T16:47:22.000Z,Other,United States,34.05440,-118.24400
 4409,0,Baliho 2S-1 Jhoni Anwar Padang,157.55.39.49,,Bing,,,2024-10-14T19:50:55.000Z,Other,United States,47.60340,-122.34140
 4410,0,Home,157.55.39.49,,Bing,,,2024-10-14T19:53:16.000Z,Other,United States,47.60340,-122.34140
 4922,0,Home,209.38.109.207,,Chrome 126.0.0.0,,,2024-10-24T00:29:54.000Z,Other,United States,37.75100,-97.82200
@@ -6660,6 +6753,7 @@ id,user_id,title,ip_address,referrer,agent,utm_source,utm_medium,hit_time,city,c
 8003,0,Baliho,17.241.219.134,,Safari 605.1.15,,,2024-12-13T07:48:46.000Z,Other,United States,37.75100,-97.82200
 8259,0,Home,216.244.66.202,,Mozilla 5.0,,,2024-12-17T21:44:00.000Z,Other,United States,37.75100,-97.82200
 8771,0,Baliho,170.106.140.110,,Safari 604.1,,,2024-12-26T00:57:05.000Z,Other,United States,34.05440,-118.24400
+9795,0,Home,205.210.31.32,http://103.247.8.209:80/,Other,,,2025-01-12T00:07:42.000Z,Other,United States,37.75100,-97.82200
 3396,0,Baliho,66.249.71.165,,Googlebot,,,2024-10-02T06:18:40.000Z,Other,United States,37.75100,-97.82200
 3908,0,Home,35.187.132.201,http://abangadek-adv.com,Chrome 112.0.0.0,,,2024-10-10T18:59:58.000Z,Other,United States,37.75100,-97.82200
 8004,0,Baliho,17.241.219.61,,Safari 605.1.15,,,2024-12-13T08:42:25.000Z,Other,United States,37.75100,-97.82200
@@ -6703,11 +6797,13 @@ id,user_id,title,ip_address,referrer,agent,utm_source,utm_medium,hit_time,city,c
 6988,0,Home,198.145.81.37,,Firefox 123.0,,,2024-11-26T14:56:47.000Z,Other,United States,37.75100,-97.82200
 8012,0,Test Printing 5,17.241.75.69,,Safari 605.1.15,,,2024-12-13T12:23:53.000Z,Other,United States,37.75100,-97.82200
 8268,0,Desain Interior 1,66.249.65.166,,Googlebot,,,2024-12-18T00:21:21.000Z,Other,United States,37.75100,-97.82200
+9804,0,Home,205.210.31.134,http://103.247.8.209:80/,Other,,,2025-01-12T08:34:36.000Z,Other,United States,37.75100,-97.82200
 2381,0,printing,64.233.173.149,,Chrome 59.0.3071.125,,,2024-09-17T06:51:13.000Z,Other,United States,37.75100,-97.82200
 3405,0,Baliho Ombilin Singkarak,66.249.74.128,,Googlebot,,,2024-10-02T08:08:24.000Z,Other,United States,37.75100,-97.82200
 3917,0,Home,205.169.39.105,,Chrome 83.0.4103.61,,,2024-10-10T20:00:31.000Z,Other,United States,37.75100,-97.82200
 8269,0,Baliho 2S-2 Siteba Padang,66.249.71.166,,Googlebot,,,2024-12-18T00:46:58.000Z,Other,United States,37.75100,-97.82200
 8781,0,Baliho Sutan Syahrir Bukittinggi,43.153.35.128,,Safari 604.1,,,2024-12-26T02:30:50.000Z,Other,United States,34.05440,-118.24400
+9805,0,Home,66.249.77.2,,Googlebot,,,2025-01-12T09:18:04.000Z,Other,United States,37.75100,-97.82200
 2382,0,printing,64.233.173.148,,Chrome 59.0.3071.125,,,2024-09-17T06:51:15.000Z,Other,United States,37.75100,-97.82200
 3150,0,Home,205.210.31.136,,Other,,,2024-09-28T20:20:36.000Z,Other,United States,37.75100,-97.82200
 3406,0,Baliho Kambang Pessel 1,66.249.71.165,,Googlebot,,,2024-10-02T08:10:04.000Z,Other,United States,37.75100,-97.82200
@@ -6716,6 +6812,7 @@ id,user_id,title,ip_address,referrer,agent,utm_source,utm_medium,hit_time,city,c
 4942,0,Home,66.249.79.229,,Googlebot,,,2024-10-24T08:21:42.000Z,Other,United States,37.75100,-97.82200
 8270,0,Home,216.244.66.202,,Mozilla 5.0,,,2024-12-18T01:13:33.000Z,Other,United States,37.75100,-97.82200
 9038,0,Printing,17.241.227.172,,Safari 605.1.15,,,2024-12-30T18:27:42.000Z,Other,United States,37.75100,-97.82200
+9806,0,Home,66.249.69.99,,Googlebot,,,2025-01-12T09:18:19.000Z,Other,United States,37.75100,-97.82200
 2383,0,printing,64.233.173.150,,Chrome 59.0.3071.125,,,2024-09-17T06:51:15.000Z,Other,United States,37.75100,-97.82200
 3407,0,Baliho 2S-1 Sp Rumbio Solok,66.249.74.129,,Googlebot,,,2024-10-02T08:11:50.000Z,Other,United States,37.75100,-97.82200
 3663,0,Home,43.159.148.221,http://abangadek-adv.com,Safari 604.1,,,2024-10-06T23:45:44.000Z,Other,United States,34.05440,-118.24400
@@ -6723,6 +6820,7 @@ id,user_id,title,ip_address,referrer,agent,utm_source,utm_medium,hit_time,city,c
 8015,0,Baliho 2S-1 Sp Rumbio Solok,17.241.219.232,,Safari 605.1.15,,,2024-12-13T13:56:29.000Z,Other,United States,37.75100,-97.82200
 8783,0,Printing,43.135.183.82,,Safari 604.1,,,2024-12-26T02:49:56.000Z,Other,United States,34.05440,-118.24400
 3408,0,Baliho Pasar Sicincin,66.249.74.128,,Googlebot,,,2024-10-02T08:14:04.000Z,Other,United States,37.75100,-97.82200
+9808,0,Home,167.253.48.218,,Chrome 114.0.0.0,,,2025-01-12T10:04:18.000Z,Other,United States,37.75100,-97.82200
 3409,0,Baliho 2S-1 Bopet Saiyo Pdg Pjg,66.249.74.129,,Googlebot,,,2024-10-02T08:15:20.000Z,Other,United States,37.75100,-97.82200
 4433,0,Baliho 2S-1 Sp Rumbio Solok,207.46.13.141,,Bing,,,2024-10-15T02:42:15.000Z,Other,United States,47.60340,-122.34140
 5713,0,Home,156.244.31.177,,Chrome 103.0.0.0,,,2024-11-07T21:54:13.000Z,Other,United States,37.75100,-97.82200
@@ -6778,6 +6876,7 @@ id,user_id,title,ip_address,referrer,agent,utm_source,utm_medium,hit_time,city,c
 7517,0,Home,43.135.185.59,http://www.abangadek-adv.com,Safari 604.1,,,2024-12-05T10:13:06.000Z,Other,United States,34.05440,-118.24400
 8285,0,Home,49.51.47.100,http://www.abangadek-adv.com,Safari 604.1,,,2024-12-18T10:49:02.000Z,Other,United States,34.05440,-118.24400
 8541,0,Test Printing 1,216.244.66.202,,Mozilla 5.0,,,2024-12-22T00:05:21.000Z,Other,United States,37.75100,-97.82200
+9821,0,Home,198.235.24.173,,Other,,,2025-01-12T11:12:03.000Z,Other,United States,34.05440,-118.24400
 3422,0,Baliho 2S-2 Ilyas Yakub Pessel,66.249.71.166,,Googlebot,,,2024-10-02T09:14:56.000Z,Other,United States,37.75100,-97.82200
 2911,0,Home,66.102.6.160,,Chrome 59.0.3071.125,,,2024-09-25T22:13:11.000Z,Other,United States,37.75100,-97.82200
 3423,0,Baliho 2S-2 Kuok Btg Kapas,66.249.74.129,,Googlebot,,,2024-10-02T09:16:32.000Z,Other,United States,37.75100,-97.82200
@@ -6806,6 +6905,7 @@ id,user_id,title,ip_address,referrer,agent,utm_source,utm_medium,hit_time,city,c
 3175,0,"Baliho Camat Bungus, Padang",207.46.13.7,,Bing,,,2024-09-29T02:09:18.000Z,Other,United States,47.60340,-122.34140
 7015,0,Interior,66.249.75.166,,Googlebot,,,2024-11-27T02:24:59.000Z,Other,United States,37.75100,-97.82200
 9063,0,Baliho 2S-2 Kuok Btg Kapas,216.244.66.202,,Mozilla 5.0,,,2024-12-31T10:49:53.000Z,Other,United States,37.75100,-97.82200
+9831,0,Produk,207.46.13.154,,Bing,,,2025-01-12T13:56:15.000Z,Other,United States,47.60340,-122.34140
 8552,0,Baliho 2S-1 Balai Nan Duo Payakumbuh,216.244.66.202,,Mozilla 5.0,,,2024-12-22T07:29:34.000Z,Other,United States,37.75100,-97.82200
 2153,0,Home,17.241.227.175,,Safari 605.1.15,,,2024-09-13T18:49:41.000Z,Other,United States,37.75100,-97.82200
 5737,0,Home,205.169.39.19,http://abangadek-adv.com,Chrome 106.0.0.0,,,2024-11-08T16:09:55.000Z,Other,United States,37.75100,-97.82200
@@ -6863,6 +6963,7 @@ id,user_id,title,ip_address,referrer,agent,utm_source,utm_medium,hit_time,city,c
 6520,0,Tentang Kami,172.94.95.7,https://abangadek-adv.com/,Chrome 114.0.0.0,,,2024-11-18T23:05:31.000Z,Other,United States,37.75100,-97.82200
 8568,0,Home,167.94.145.101,,Mozilla 5.0,,,2024-12-22T13:51:49.000Z,Other,United States,37.75100,-97.82200
 9592,0,Home,49.51.47.100,http://www.abangadek-adv.com,Safari 604.1,,,2025-01-06T19:25:19.000Z,Other,United States,34.05440,-118.24400
+9848,0,Home,207.46.13.31,,Bing,,,2025-01-12T17:12:45.000Z,Other,United States,47.60340,-122.34140
 5753,0,Home,17.241.75.127,,Safari 605.1.15,,,2024-11-09T07:58:12.000Z,Other,United States,37.75100,-97.82200
 6521,0,Interior,172.94.95.7,https://abangadek-adv.com/,Chrome 114.0.0.0,,,2024-11-18T23:05:33.000Z,Other,United States,37.75100,-97.82200
 8057,0,Home,216.244.66.202,,Mozilla 5.0,,,2024-12-14T03:39:20.000Z,Other,United States,37.75100,-97.82200
@@ -6899,12 +7000,14 @@ id,user_id,title,ip_address,referrer,agent,utm_source,utm_medium,hit_time,city,c
 9089,0,Baliho 2S-2 Ilyas Yakub Pessel,216.244.66.202,,Mozilla 5.0,,,2025-01-01T01:42:41.000Z,Other,United States,37.75100,-97.82200
 4994,0,Home,66.249.71.167,,Googlebot,,,2024-10-25T08:27:54.000Z,Other,United States,37.75100,-97.82200
 7554,0,Home,66.249.71.196,,Googlebot,,,2024-12-06T01:39:27.000Z,Other,United States,37.75100,-97.82200
+9858,0,Home,205.169.39.227,,Chrome 83.0.4103.61,,,2025-01-12T19:46:49.000Z,Other,United States,37.75100,-97.82200
 2435,0,Home,66.102.6.160,https://www.google.com/,Chrome 127.0.0.0,,,2024-09-18T21:05:29.000Z,Other,United States,37.75100,-97.82200
 4995,0,Home,66.249.69.32,,Googlebot,,,2024-10-25T08:27:54.000Z,Other,United States,37.75100,-97.82200
 6531,0,Home,43.153.119.119,http://abangadek-adv.com,Safari 604.1,,,2024-11-19T04:30:56.000Z,Other,United States,34.05440,-118.24400
 8579,0,Home,43.159.140.236,,Safari 604.1,,,2024-12-22T21:40:11.000Z,Other,United States,34.05440,-118.24400
 8835,0,Home,199.45.154.129,,Mozilla 5.0,,,2024-12-27T03:32:41.000Z,Other,United States,37.75100,-97.82200
 9603,0,Home,43.135.185.59,http://abangadek-adv.com,Safari 604.1,,,2025-01-07T03:16:23.000Z,Other,United States,34.05440,-118.24400
+9859,0,Home,205.169.39.227,,Chrome 79.0.3945.79,,,2025-01-12T19:47:12.000Z,Other,United States,37.75100,-97.82200
 2692,0,Printing,66.249.71.169,,Googlebot,,,2024-09-24T03:17:34.000Z,Other,United States,37.75100,-97.82200
 4996,0,Home,205.169.39.8,http://abangadek-adv.com,Chrome 106.0.0.0,,,2024-10-25T09:50:54.000Z,Other,United States,37.75100,-97.82200
 6788,0,Home,49.51.196.42,http://abangadek-adv.com,Safari 604.1,,,2024-11-22T21:29:40.000Z,Other,United States,34.05440,-118.24400
@@ -7453,6 +7556,7 @@ id,user_id,title,ip_address,referrer,agent,utm_source,utm_medium,hit_time,city,c
 2599,0,Home,154.37.64.129,https://abangadek-adv.com/,Chrome 114.0.0.0,,,2024-09-22T03:54:19.000Z,San Francisco,United States,37.78090,-122.42450
 2600,0,Printing,154.37.64.129,https://abangadek-adv.com/,Chrome 114.0.0.0,,,2024-09-22T03:54:23.000Z,San Francisco,United States,37.78090,-122.42450
 2601,0,Produk,154.37.64.129,https://abangadek-adv.com/,Chrome 114.0.0.0,,,2024-09-22T03:54:27.000Z,San Francisco,United States,37.78090,-122.42450
+9793,0,Home,69.167.29.8,https://abangadek-adv.com/,Chrome 130.0.0.0,,,2025-01-11T23:05:14.000Z,San Francisco,United States,37.76420,-122.39930
 3156,0,Home,45.131.194.191,,Chrome 114.0.0.0,,,2024-09-28T22:42:04.000Z,San Francisco,United States,37.78090,-122.42450
 3157,0,Tentang Kami,45.131.194.225,https://abangadek-adv.com/,Chrome 114.0.0.0,,,2024-09-28T22:42:05.000Z,San Francisco,United States,37.78090,-122.42450
 3158,0,Client,45.131.194.226,https://abangadek-adv.com/,Chrome 114.0.0.0,,,2024-09-28T22:42:21.000Z,San Francisco,United States,37.78090,-122.42450
@@ -7474,6 +7578,7 @@ id,user_id,title,ip_address,referrer,agent,utm_source,utm_medium,hit_time,city,c
 3186,0,Produk,45.131.194.232,https://abangadek-adv.com/,Opera 89.0.4447.51,,,2024-09-29T05:14:42.000Z,San Francisco,United States,37.78090,-122.42450
 6338,0,Home,154.37.64.89,,Chrome 114.0.0.0,,,2024-11-17T03:24:12.000Z,San Francisco,United States,37.78090,-122.42450
 7499,0,Home,216.250.255.116,,Chrome 130.0.0.0,,,2024-12-04T20:18:59.000Z,San Jose,United States,37.18350,-121.77140
+9818,0,Home,18.144.101.242,,Chrome 131.0.0.0,,,2025-01-12T10:19:28.000Z,San Jose,United States,37.18350,-121.77140
 2926,0,Home,13.91.102.245,https://abangadek-adv.com/,Chrome 66.0.3359.181,,,2024-09-26T00:18:39.000Z,San Jose,United States,37.18350,-121.77140
 3256,0,Home,54.153.100.1,,Chrome 58.0.3029.110,,,2024-09-30T15:06:46.000Z,San Jose,United States,37.18350,-121.77140
 7213,0,Home,173.252.107.115,,Other,,,2024-11-29T21:14:43.000Z,Sandston,United States,37.51370,-77.26640
@@ -7501,6 +7606,7 @@ id,user_id,title,ip_address,referrer,agent,utm_source,utm_medium,hit_time,city,c
 6711,0,Home,43.135.144.126,http://www.abangadek-adv.com,Safari 604.1,,,2024-11-21T18:09:59.000Z,Santa Clara,United States,37.35300,-121.95430
 2617,0,Home,43.130.39.101,http://www.abangadek-adv.com,Safari 604.1,,,2024-09-22T13:04:44.000Z,Santa Clara,United States,37.35300,-121.95430
 6457,0,Home,43.135.149.154,,Safari 604.1,,,2024-11-17T23:23:49.000Z,Santa Clara,United States,37.35300,-121.95430
+9788,0,Home,43.130.31.17,http://abangadek-adv.com,Safari 604.1,,,2025-01-11T19:44:30.000Z,Santa Clara,United States,37.35300,-121.95430
 5696,0,Tentang Kami,64.227.102.24,,Chrome 124.0.0.0,,,2024-11-07T15:01:11.000Z,Santa Clara,United States,37.39310,-121.96200
 5190,0,Home,43.135.134.127,http://www.abangadek-adv.com,Safari 604.1,,,2024-10-28T22:50:12.000Z,Santa Clara,United States,37.35300,-121.95430
 6216,0,Home,43.130.53.252,http://www.abangadek-adv.com,Safari 604.1,,,2024-11-15T17:17:08.000Z,Santa Clara,United States,37.35300,-121.95430
@@ -7512,6 +7618,7 @@ id,user_id,title,ip_address,referrer,agent,utm_source,utm_medium,hit_time,city,c
 2135,0,Home,43.130.32.245,http://www.abangadek-adv.com,Safari 604.1,,,2024-09-13T09:59:27.000Z,Santa Clara,United States,37.35300,-121.95430
 3673,0,Home,43.130.39.254,http://www.abangadek-adv.com,Safari 604.1,,,2024-10-07T06:54:35.000Z,Santa Clara,United States,37.35300,-121.95430
 2395,0,Home,45.32.139.87,http://www.abangadek-adv.com/,Chrome 74.0.3729.169,,,2024-09-17T14:50:49.000Z,Santa Clara,United States,37.39310,-121.96200
+9822,0,Home,43.130.16.140,http://abangadek-adv.com,Safari 604.1,,,2025-01-12T11:43:57.000Z,Santa Clara,United States,37.35300,-121.95430
 7775,0,Home,43.135.133.194,http://abangadek-adv.com,Safari 604.1,,,2024-12-08T19:33:59.000Z,Santa Clara,United States,37.35300,-121.95430
 5728,0,Home,43.135.138.128,http://abangadek-adv.com,Safari 604.1,,,2024-11-08T10:04:20.000Z,Santa Clara,United States,37.35300,-121.95430
 9571,0,Home,43.130.47.33,http://abangadek-adv.com,Safari 604.1,,,2025-01-06T11:09:50.000Z,Santa Clara,United States,37.35300,-121.95430
@@ -7524,6 +7631,7 @@ id,user_id,title,ip_address,referrer,agent,utm_source,utm_medium,hit_time,city,c
 2429,0,Home,149.28.223.236,http://abangadek-adv.com/,Chrome 74.0.3729.169,,,2024-09-18T06:54:40.000Z,Santa Clara,United States,37.39310,-121.96200
 8573,0,Home,43.135.144.81,http://abangadek-adv.com,Safari 604.1,,,2024-12-22T19:05:10.000Z,Santa Clara,United States,37.35300,-121.95430
 7808,0,Home,43.135.145.117,http://abangadek-adv.com,Safari 604.1,,,2024-12-09T12:51:57.000Z,Santa Clara,United States,37.35300,-121.95430
+9860,0,Home,43.135.140.225,http://www.abangadek-adv.com,Safari 604.1,,,2025-01-12T19:58:59.000Z,Santa Clara,United States,37.35300,-121.95430
 8583,0,Baliho,170.106.180.153,,Safari 604.1,,,2024-12-22T22:24:45.000Z,Santa Clara,United States,37.35300,-121.95430
 9102,0,Home,170.106.180.153,http://www.abangadek-adv.com,Safari 604.1,,,2025-01-01T06:23:35.000Z,Santa Clara,United States,37.35300,-121.95430
 6543,0,Home,43.130.14.245,http://www.abangadek-adv.com,Safari 604.1,,,2024-11-19T14:00:27.000Z,Santa Clara,United States,37.35300,-121.95430

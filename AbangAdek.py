@@ -11,7 +11,6 @@ import json
 
 from itables.streamlit import interactive_table
 
-
 st.set_page_config(
     page_title="Abang Adek Data Analisis",
     page_icon="fishtail.png",
@@ -763,26 +762,26 @@ with tab2:
     dfh['lat'] = dfh['lat'].fillna(0)  # Replace 0 with a meaningful default
     dfh['lon'] = dfh['lon'].fillna(0)
 
-    # Merge title and coordinates into city_visits
-    city_visits = city_visits.merge(
-        dfh[['city', 'title', 'lat', 'lon']].drop_duplicates(),
-        on='city',
-        how='left'
-    )
+    # Calculate visit counts dynamically if not present
+    # Create visit count by grouping on city and title
+    dfh['visit_count'] = dfh.groupby(['city', 'title'])['title'].transform('count')
 
-    # Create a dropdown to select a title
-    unique_titles = city_visits['title'].unique()
+    # Add an "All Titles" option to the dropdown
+    unique_titles = ['All'] + dfh['title'].unique().tolist()
     selected_title = st.selectbox("Pilih Halaman Yang Dikunjungi", options=unique_titles, index=0)
 
     # Filter data based on the selected title
-    filtered_data = city_visits[city_visits['title'] == selected_title]
+    if selected_title == 'All':
+        filtered_data = dfh.copy()  # Include all rows
+    else:
+        filtered_data = dfh[dfh['title'] == selected_title]  # Filter by specific title
 
-    # Group by city and calculate visit_count for the selected title
-    filtered_grouped = filtered_data.groupby(['city']).agg({
-        'visit_count': 'sum',
-        'lat': 'first',
-        'lon': 'first'
-    }).reset_index()
+    # Group the filtered data by city, lat, and lon to recalculate visit counts
+    filtered_grouped = (
+        filtered_data.groupby(['city', 'lat', 'lon'], as_index=False)
+        .agg({'title': 'count'})  # Count the occurrences of the selected title
+        .rename(columns={'title': 'visit_count'})  # Rename the column to visit_count
+    )
 
     # Create scatter_mapbox
     fig_city = px.scatter_mapbox(
@@ -792,11 +791,11 @@ with tab2:
         size='visit_count',
         text='city',
         hover_name='city',
-        hover_data={'visit_count': True},
+        hover_data={'visit_count': True, 'lat': False, 'lon': False},
         color='visit_count',  # Color represents visit count
         color_continuous_scale='Tropic',
         width=1200,
-        height=650
+        height=650,
     )
 
     # Update layout
