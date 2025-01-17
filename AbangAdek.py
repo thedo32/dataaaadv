@@ -24,12 +24,22 @@ Email: databaseoutlet@gmail.com
 # CSS to customize the delta color for Streamlit's metric component
 st.markdown("""
     <style>
+    /* Import custom fonts */
+    @import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Protest+Guerrilla&family=Tilt+Neon&display=swap');
+
+    /* Apply the custom font globally */
+    html, body, div, [class*="css"] {
+        font-family: 'Tilt Neon', sans-serif !important;
+    }
+
     /* Apply custom color to Streamlit metric delta */
     div[data-testid="stMetricDelta"] {
         color: #A7D129 !important;
     }
     </style>
     """, unsafe_allow_html=True)
+
+
 
 urluser = "https://restful.abangadek-adv.com/users"
 urlhit = "https://restful.abangadek-adv.com/hits"
