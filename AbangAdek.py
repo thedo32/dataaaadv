@@ -21,6 +21,16 @@ Email: databaseoutlet@gmail.com
             """}
 )
 
+# CSS to customize the delta color for Streamlit's metric component
+st.markdown("""
+    <style>
+    /* Apply custom color to Streamlit metric delta */
+    div[data-testid="stMetricDelta"] {
+        color: #A7D129 !important;
+    }
+    </style>
+    """, unsafe_allow_html=True)
+
 urluser = "https://restful.abangadek-adv.com/users"
 urlhit = "https://restful.abangadek-adv.com/hits"
 
