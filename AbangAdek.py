@@ -220,9 +220,10 @@ dfh['tanggal'] = dfh['hit_time'].dt.date  # Extract date from datetime
 daily_visits = dfh.groupby('tanggal').size().reset_index(name='visit_count')
 
 
-tab1, tab2, tab3 = st.tabs(["Jumlah Kunjungan per Wilayah","Jumlah Kunjungan per Halaman",  "Pengguna Terdaftar"])
+tab1, tab2, tab3, tab4, tab5 = st.tabs(["Jumlah Kunjungan per Wilayah","Jumlah Kunjungan per Halaman",
+                                        "Jumlah Kunjungan per Referensi Asal", "Jumlah Kunjungan per Tautan Asal",  "Pengguna Terdaftar"])
 
-with (tab1):
+with tab1:
     # DAILY TIME ANALYSYS
 
     st.markdown("### Analisa Kunjungan Per Hari Berdasarkan Negara dan Kota")
@@ -481,7 +482,7 @@ with (tab1):
     # )
 
     # Display map in Streamlit
-    st.plotly_chart(fig_country, use_container_width=True)
+    st.plotly_chart(fig_country, use_container_width=True, key=000)
 
     # Geographic Heatmap by City
     st.markdown("#### Trends Secara Geografis: Analisa Menurut Kota")
@@ -527,9 +528,7 @@ with (tab1):
     )
 
     # Show the map using Streamlit
-    st.plotly_chart(fig_city, use_container_width=True)
-
-
+    st.plotly_chart(fig_city, use_container_width=True,key=111)
 
 
 #kunjungan per halaman
@@ -811,9 +810,587 @@ with tab2:
     # Show map in Streamlit
     st.plotly_chart(fig_city, use_container_width=True,key=12345)
 
-#kunjungan per wilayah
-
+#kunjungan per link asal
 with tab3:
+
+    # DAILY TIME ANALYSYS
+    st.markdown("### Analisa Kunjungan Per Hari Berdasarkan Referensi Asal dan Negara")
+
+    # Multiselect for countrycd
+    selected_countries = st.multiselect(
+        "Pilih Negara",
+        options=["All"] + dfh['country'].unique().tolist(),
+        default=["All"],
+        key="halaman_country1"
+    )
+
+
+    # filter other or unknown
+    dfh['utm_source'] = dfh['utm_source'].fillna('Other')
+
+    if "All" not in selected_countries:
+        dfh = dfh[dfh['country'].isin(selected_countries)]
+
+    # Multiselect for pages
+    filtered_utms = dfh['utm_source'].unique()
+    selected_utms = st.multiselect(
+        "Pilih Referensi Asal",
+        options=["All"] + sorted(filtered_utms),
+        default=["All"],
+    )
+
+    if "All" not in selected_utms:
+        dfh = dfh[dfh['utm_source'].isin(selected_utms)]
+
+    # Aggregate filtered data
+    daily_visits_filtered = dfh.groupby('tanggal').size().reset_index(name='visit_count')
+
+    # Plot filtered data
+    if not daily_visits_filtered.empty:
+        time_series_chart_filtered = alt.Chart(daily_visits_filtered).mark_line(point=True).encode(
+            x=alt.X('tanggal:T', title='Tanggal'),
+            y=alt.Y('visit_count:Q', title='Jumlah Kunjungan'),
+            tooltip=[
+                alt.Tooltip('tanggal:T', title='Tanggal', format='%Y-%m-%d'),
+                alt.Tooltip('visit_count:Q', title='Kunjungan')
+            ]
+        ).properties(
+            title="Kunjungan Per Hari Berdasarkan Referensi Asal",
+            height=400,
+            width=1200
+        ).interactive()
+        st.altair_chart(time_series_chart_filtered)
+    else:
+        st.warning("Tidak ada  data tersedia untuk filters yang dipilih.")
+
+    st.divider()
+
+
+    st.markdown("## Kunjungan Per Referensi Asal")
+    # Altair Bar Chart
+
+    # filter other or unknown
+    df['utm_source'] = df['utm_source'].fillna('Other')
+
+    all_countries = df['country'].unique().tolist()
+
+    selection = alt.selection_point(fields=['country'], bind='legend')
+
+    bars = alt.Chart(df).mark_bar(size=6).encode(
+        x=alt.X(
+            "utm_source:N",
+            title="Link Asal",
+            axis=alt.Axis(labelAngle=90),
+            sort=alt.EncodingSortField(field="id", op="count", order="descending")
+        ),
+        y=alt.Y("count(id):Q", title="Jumlah Kunjungan"),  # Count occurrences by city
+        xOffset=alt.X("country:N", title="Country"),  # Group by country
+        color=alt.Color(
+            "country:N",
+            title="Negara",
+            scale=alt.Scale(domain=all_countries),  # Explicitly set domain
+            legend=alt.Legend(title="Pilih Negara")
+        ),  # Different colors for each country
+        tooltip=["country", "utm_source", "count(id)"]  # Add tooltips for interactivity
+    ).add_params(selection).transform_filter(selection).properties(
+        height=800,
+        width=1200
+    ).interactive(bind_x=True, bind_y=True)
+
+    st.altair_chart(bars)
+
+    st.divider()
+
+    df = df.copy()
+    # filter other or unknown
+
+    # filter other or unknown
+    #df = dfh[~dfh['utm_source'].isin(["Unknown", None])]
+
+    # Ensure all values in 'utm_source' are strings before applying the transformation
+    df['utm_source'] = df['utm_source'].fillna('Other')
+    df['trunc_utm_source'] = df['utm_source'].apply(lambda x: str(x) if len(str(x)) <= 10 else str(x)[:10] + '...')
+
+    colA, colB, colC = st.columns(3)
+    with colA:
+        st.markdown("<h4 style='text-align: center;'>Top 10 Link Asal</h4>", unsafe_allow_html=True)
+
+
+        # Select the top 10 cities (you can define criteria, e.g., most frequent)
+        top_10_pages = df['utm_source'].value_counts().head(10).index.tolist()
+
+        # Filter the DataFrame to include only these top 10 cities
+        filtered_df = df[df['utm_source'].isin(top_10_pages)]
+
+        bars = alt.Chart(filtered_df).mark_bar(size=30).encode(
+            x=alt.X(
+                "trunc_utm_source:N",
+                title=("Top 10 Referensi Asal Dikunjungi"),
+                axis=alt.Axis(labelAngle=90),
+                sort=alt.EncodingSortField(field="id", op="count", order="descending")
+            ),
+            y=alt.Y("count(id):Q", title="Jumlah Kunjungan"),  # Count occurrences by city
+            # Different colors for each country
+            tooltip=["utm_source", "count(id)"]  # Add tooltips for interactivity
+        ).properties(
+            height=400,
+            width=400
+        ).interactive(bind_x=True, bind_y=True)
+
+        st.altair_chart(bars)
+
+
+    with colB:
+        st.markdown("<h4 style='text-align: center;'>Top 10 diakses Dalam Negri</h4>", unsafe_allow_html=True)
+
+        # Filter rows where the country is "Indonesia"
+        indonesia_pages = df[df['country'] == 'Indonesia']
+
+        # Select the top 10 cities (you can define criteria, e.g., most frequent)
+        top_10_pages = indonesia_pages['utm_source'].value_counts().head(10).index.tolist()
+
+        # Filter the DataFrame to include only these top 10 cities
+        filtered_df = indonesia_pages[indonesia_pages['utm_source'].isin(top_10_pages)]
+
+        bars = alt.Chart(filtered_df).mark_bar(size=30).encode(
+            x=alt.X(
+                "trunc_utm_source:N",
+                title="Referensi Asal",
+                axis=alt.Axis(labelAngle=90),
+                sort=alt.EncodingSortField(field="id", op="count", order="descending")
+            ),
+            y=alt.Y("count(id):Q", title="Jumlah Kunjungan"),  # Count occurrences by city
+            # Different colors for each country
+            tooltip=[ "utm_source", "count(id)"]  # Add tooltips for interactivity
+        ).properties(
+            height=400,
+            width=400
+        ).interactive(bind_x=True, bind_y=True)
+
+        st.altair_chart(bars)
+
+    with colC:
+        st.markdown("<h4 style='text-align: center;'>Top 10 diakses Luar Negeri</h4>", unsafe_allow_html=True)
+
+        # Filter rows where the country is outside "Indonesia"
+        abroad_cities = df[df['country'] != 'Indonesia']
+
+        # Select the top 10 cities (you can define criteria, e.g., most frequent)
+        top_10_pages = abroad_cities['utm_source'].value_counts().head(10).index.tolist()
+
+        # Filter the DataFrame to include only these top 10 cities
+        filtered_df = abroad_cities[abroad_cities['utm_source'].isin(top_10_pages)]
+
+        bars = alt.Chart(filtered_df).mark_bar(size=30).encode(
+            x=alt.X(
+                "trunc_utm_source:N",
+                title="Referensi Asal",
+                axis=alt.Axis(labelAngle=90),
+                sort=alt.EncodingSortField(field="id", op="count", order="descending")
+            ),
+            y=alt.Y("count(id):Q", title="Jumlah Kunjungan"),  # Count occurrences by city
+            # Different colors for each country
+            tooltip=["utm_source", "count(id)"]  # Add tooltips for interactivity
+        ).properties(
+            height=400,
+            width=400
+        ).interactive(bind_x=True, bind_y=True)
+
+        st.altair_chart(bars)
+
+    st.divider()
+
+    # still in tab1
+    # Geographic Heatmap by Country
+    st.markdown("#### Trends Secara Geografis: Analisa Menurut Negara")
+
+    # Aggregate visit data by country and city
+    country_visits = dfh.groupby('country').size().reset_index(name='visit_count')
+    city_visits = dfh.groupby(['country', 'city']).size().reset_index(name='visit_count')
+
+    # Create a choropleth
+    fig_country = px.choropleth(
+        country_visits,
+        locations='country',
+        locationmode='country names',  # Directly use country names
+        color='visit_count',
+        hover_name='country',
+        title=None,
+        color_continuous_scale='Viridis',
+        width=1200,
+        height=800,
+    )
+
+    # Update geos for dark theme
+    fig_country.update_geos(
+        showcoastlines=False,
+        # coastlinecolor="black",
+        landcolor="#1a1a1a",  # Darker background color
+        oceancolor="#2a2a2a",  # Dark grayish-blue ocean color
+        showland=True,
+        showocean=True,
+        projection_scale=4,  # Scale for zoom effect
+        center={"lat": -0.789275, "lon": 113.921327},  # Center the map
+    )
+
+    # Display map in Streamlit
+    st.plotly_chart(fig_country, use_container_width=True, key=345)
+
+    # Geographic Heatmap by City
+    st.markdown("#### Trends Secara Geografis: Analisa Menurut Kota")
+
+    # Fill missing coordinates with placeholders if needed
+    dfh['lat'] = dfh['lat'].fillna(0)  # Replace with a meaningful default
+    dfh['long'] = dfh['lon'].fillna(0)
+
+    # make sure coordinate is numeric
+    dfh['lat'] = pd.to_numeric(dfh['lat'], errors='coerce')
+    dfh['lon'] = pd.to_numeric(dfh['lon'], errors='coerce')
+
+    # Fill missing values
+    dfh['lat'] = dfh['lat'].fillna(0)  # Replace 0 with a meaningful default
+    dfh['lon'] = dfh['lon'].fillna(0)
+
+    # Calculate visit counts dynamically if not present
+    # Create visit count by grouping on city and utm_source
+    dfh['visit_count'] = dfh.groupby(['city', 'utm_source'])['utm_source'].transform('count')
+
+    # Add an "All utm_sources" option to the dropdown
+    unique_utm_sources = ['All'] + dfh['utm_source'].unique().tolist()
+    selected_utm_source = st.selectbox("Pilih Referensi Asal Pengunjung", options=unique_utm_sources, index=0)
+
+    # Filter data based on the selected utm_source
+    if selected_utm_source == 'All':
+        filtered_data = dfh.copy()  # Include all rows
+    else:
+        filtered_data = dfh[dfh['utm_source'] == selected_utm_source]  # Filter by specific utm_source
+
+    # Group the filtered data by city, lat, and lon to recalculate visit counts
+    filtered_grouped = (
+        filtered_data.groupby(['city', 'lat', 'lon'], as_index=False)
+        .agg({'utm_source': 'count'})  # Count the occurrences of the selected utm_source
+        .rename(columns={'utm_source': 'visit_count'})  # Rename the column to visit_count
+    )
+
+    # Create scatter_mapbox
+    fig_city = px.scatter_mapbox(
+        filtered_grouped,
+        lat='lat',
+        lon='lon',
+        size='visit_count',
+        text='city',
+        hover_name='city',
+        hover_data={'visit_count': True, 'lat': False, 'lon': False},
+        color='visit_count',  # Color represents visit count
+        color_continuous_scale='Tropic',
+        width=1200,
+        height=650,
+    )
+
+    # Update layout
+    fig_city.update_layout(
+        mapbox=dict(
+            style='carto-darkmatter',
+            center=dict(lat=-0.789275, lon=113.921327),  # Center map
+            zoom=3.1,
+        ),
+        showlegend=True
+    )
+
+    # Show map in Streamlit
+    st.plotly_chart(fig_city, use_container_width=True,key=3456)
+
+#kunjungan per link asal
+with tab4:
+
+    # DAILY TIME ANALYSYS
+    st.markdown("### Analisa Kunjungan Per Hari Berdasarkan Tautan Asal dan Negara")
+
+    # Multiselect for countrycd
+    selected_countries = st.multiselect(
+        "Pilih Negara",
+        options=["All"] + dfh['country'].unique().tolist(),
+        default=["All"],
+        key="halaman_country2"
+    )
+
+    # Replace null/NaN values in the 'referrer' column with "other"
+    dfh['referrer'] = dfh['referrer'].fillna('Other')
+
+    if "All" not in selected_countries:
+        dfh = dfh[dfh['country'].isin(selected_countries)]
+
+    # filter other or unknown
+    #dfh = dfh[~dfh['referrer'].isin([None])]
+
+    # Multiselect for pages
+    filtered_referrer = dfh['referrer'].unique()
+    selected_referrers = st.multiselect(
+        "Pilih Tautan",
+        options=["All"] + sorted(filtered_referrer),
+        default=["All"],
+        key=222
+    )
+
+    if "All" not in selected_referrers:
+        dfh = dfh[dfh['referrer'].isin(selected_referrers)]
+
+    # Aggregate filtered data
+    daily_visits_filtered = dfh.groupby('tanggal').size().reset_index(name='visit_count')
+
+    # Plot filtered data
+    if not daily_visits_filtered.empty:
+        time_series_chart_filtered = alt.Chart(daily_visits_filtered).mark_line(point=True).encode(
+            x=alt.X('tanggal:T', title='Tanggal'),
+            y=alt.Y('visit_count:Q', title='Jumlah Kunjungan'),
+            tooltip=[
+                alt.Tooltip('tanggal:T', title='Tanggal', format='%Y-%m-%d'),
+                alt.Tooltip('visit_count:Q', title='Kunjungan')
+            ]
+        ).properties(
+            title="Kunjungan Per Hari Berdasarkan Tautan Asal",
+            height=400,
+            width=1200
+        ).interactive()
+        st.altair_chart(time_series_chart_filtered)
+    else:
+        st.warning("Tidak ada  data tersedia untuk filters yang dipilih.")
+
+    st.divider()
+
+
+    st.markdown("## Kunjungan Per Tautan Asal")
+    # Altair Bar Chart
+
+    # filter other or unknown
+    df['referrer'] = df['referrer'].fillna('Other')
+
+    all_countries = df['country'].unique().tolist()
+
+    selection = alt.selection_point(fields=['country'], bind='legend')
+
+    bars = alt.Chart(df).mark_bar(size=6).encode(
+        x=alt.X(
+            "referrer:N",
+            title="Tautan Asal",
+            axis=alt.Axis(labelAngle=90),
+            sort=alt.EncodingSortField(field="id", op="count", order="descending")
+        ),
+        y=alt.Y("count(id):Q", title="Jumlah Kunjungan"),  # Count occurrences by city
+        xOffset=alt.X("country:N", title="Country"),  # Group by country
+        color=alt.Color(
+            "country:N",
+            title="Negara",
+            scale=alt.Scale(domain=all_countries),  # Explicitly set domain
+            legend=alt.Legend(title="Pilih Negara")
+        ),  # Different colors for each country
+        tooltip=["country", "referrer", "count(id)"]  # Add tooltips for interactivity
+    ).add_params(selection).transform_filter(selection).properties(
+        height=800,
+        width=1200
+    ).interactive(bind_x=True, bind_y=True)
+
+    st.altair_chart(bars)
+
+    st.divider()
+
+    # filter other or unknown
+    # df = dfh[~dfh['referrer'].isin([None])]
+    df = df.copy()
+    df['referrer'] = df['referrer'].fillna('Other')
+    df['trunc_referrer'] = df['referrer'].apply(lambda x: str(x) if len(str(x)) <= 10 else str(x)[:10] + '...')
+
+    colA, colB, colC = st.columns(3)
+    with colA:
+        st.markdown("<h4 style='text-align: center;'>Top 10 Tautan Asal</h4>", unsafe_allow_html=True)
+
+
+        # Select the top 10 cities (you can define criteria, e.g., most frequent)
+        top_10_pages = df['referrer'].value_counts().head(10).index.tolist()
+
+        # Filter the DataFrame to include only these top 10 cities
+        filtered_df = df[df['referrer'].isin(top_10_pages)]
+
+        bars = alt.Chart(filtered_df).mark_bar(size=30).encode(
+            x=alt.X(
+                "trunc_referrer:N",
+                title=("Top 10 Tautan Asal"),
+                axis=alt.Axis(labelAngle=90),
+                sort=alt.EncodingSortField(field="id", op="count", order="descending")
+            ),
+            y=alt.Y("count(id):Q", title="Jumlah Kunjungan"),  # Count occurrences by city
+            # Different colors for each country
+            tooltip=["referrer", "count(id)"]  # Add tooltips for interactivity
+        ).properties(
+            height=400,
+            width=400
+        ).interactive(bind_x=True, bind_y=True)
+
+        st.altair_chart(bars)
+
+
+    with colB:
+        st.markdown("<h4 style='text-align: center;'>Top 10 diakses Dalam Negri</h4>", unsafe_allow_html=True)
+
+        # Filter rows where the country is "Indonesia"
+        indonesia_pages = df[df['country'] == 'Indonesia']
+
+        # Select the top 10 cities (you can define criteria, e.g., most frequent)
+        top_10_pages = indonesia_pages['referrer'].value_counts().head(10).index.tolist()
+
+        # Filter the DataFrame to include only these top 10 cities
+        filtered_df = indonesia_pages[indonesia_pages['referrer'].isin(top_10_pages)]
+
+        bars = alt.Chart(filtered_df).mark_bar(size=30).encode(
+            x=alt.X(
+                "trunc_referrer:N",
+                title="Tautan Asal",
+                axis=alt.Axis(labelAngle=90),
+                sort=alt.EncodingSortField(field="id", op="count", order="descending")
+            ),
+            y=alt.Y("count(id):Q", title="Jumlah Kunjungan"),  # Count occurrences by city
+            # Different colors for each country
+            tooltip=[ "referrer", "count(id)"]  # Add tooltips for interactivity
+        ).properties(
+            height=400,
+            width=400
+        ).interactive(bind_x=True, bind_y=True)
+
+        st.altair_chart(bars)
+
+    with colC:
+        st.markdown("<h4 style='text-align: center;'>Top 10 diakses Luar Negeri</h4>", unsafe_allow_html=True)
+
+        # Filter rows where the country is outside "Indonesia"
+        abroad_cities = df[df['country'] != 'Indonesia']
+
+        # Select the top 10 cities (you can define criteria, e.g., most frequent)
+        top_10_pages = abroad_cities['referrer'].value_counts().head(10).index.tolist()
+
+        # Filter the DataFrame to include only these top 10 cities
+        filtered_df = abroad_cities[abroad_cities['referrer'].isin(top_10_pages)]
+
+        bars = alt.Chart(filtered_df).mark_bar(size=30).encode(
+            x=alt.X(
+                "trunc_referrer:N",
+                title="Tautan Asal",
+                axis=alt.Axis(labelAngle=90),
+                sort=alt.EncodingSortField(field="id", op="count", order="descending")
+            ),
+            y=alt.Y("count(id):Q", title="Jumlah Kunjungan"),  # Count occurrences by city
+            # Different colors for each country
+            tooltip=["referrer", "count(id)"]  # Add tooltips for interactivity
+        ).properties(
+            height=400,
+            width=400
+        ).interactive(bind_x=True, bind_y=True)
+
+        st.altair_chart(bars)
+
+    st.divider()
+
+    # still in tab1
+    # Geographic Heatmap by Country
+    st.markdown("#### Trends Secara Geografis: Analisa Menurut Negara")
+
+    # Aggregate visit data by country and city
+    country_visits = dfh.groupby('country').size().reset_index(name='visit_count')
+    city_visits = dfh.groupby(['country', 'city']).size().reset_index(name='visit_count')
+
+    # Create a choropleth
+    fig_country = px.choropleth(
+        country_visits,
+        locations='country',
+        locationmode='country names',  # Directly use country names
+        color='visit_count',
+        hover_name='country',
+        title=None,
+        color_continuous_scale='Viridis',
+        width=1200,
+        height=800,
+    )
+
+    # Update geos for dark theme
+    fig_country.update_geos(
+        showcoastlines=False,
+        # coastlinecolor="black",
+        landcolor="#1a1a1a",  # Darker background color
+        oceancolor="#2a2a2a",  # Dark grayish-blue ocean color
+        showland=True,
+        showocean=True,
+        projection_scale=4,  # Scale for zoom effect
+        center={"lat": -0.789275, "lon": 113.921327},  # Center the map
+    )
+
+    # Display map in Streamlit
+    st.plotly_chart(fig_country, use_container_width=True, key=456)
+
+    # Geographic Heatmap by City
+    st.markdown("#### Trends Secara Geografis: Analisa Menurut Kota")
+
+    # Fill missing coordinates with placeholders if needed
+    dfh['lat'] = dfh['lat'].fillna(0)  # Replace with a meaningful default
+    dfh['long'] = dfh['lon'].fillna(0)
+
+    # make sure coordinate is numeric
+    dfh['lat'] = pd.to_numeric(dfh['lat'], errors='coerce')
+    dfh['lon'] = pd.to_numeric(dfh['lon'], errors='coerce')
+
+    # Fill missing values
+    dfh['lat'] = dfh['lat'].fillna(0)  # Replace 0 with a meaningful default
+    dfh['lon'] = dfh['lon'].fillna(0)
+
+    # Calculate visit counts dynamically if not present
+    # Create visit count by grouping on city and referrer
+    dfh['visit_count'] = dfh.groupby(['city', 'referrer'])['referrer'].transform('count')
+
+    # Add an "All referrers" option to the dropdown
+    unique_referrers = ['All'] + dfh['referrer'].unique().tolist()
+    selected_referrer = st.selectbox("Pilih Tautan Asal Pengunjung", options=unique_referrers, index=0, key="referrer2")
+
+    # Filter data based on the selected referrer
+    if selected_referrer == 'All':
+        filtered_data = dfh.copy()  # Include all rows
+    else:
+        filtered_data = dfh[dfh['referrer'] == selected_referrer]  # Filter by specific referrer
+
+    # Group the filtered data by city, lat, and lon to recalculate visit counts
+    filtered_grouped = (
+        filtered_data.groupby(['city', 'lat', 'lon'], as_index=False)
+        .agg({'referrer': 'count'})  # Count the occurrences of the selected referrer
+        .rename(columns={'referrer': 'visit_count'})  # Rename the column to visit_count
+    )
+
+    # Create scatter_mapbox
+    fig_city = px.scatter_mapbox(
+        filtered_grouped,
+        lat='lat',
+        lon='lon',
+        size='visit_count',
+        text='city',
+        hover_name='city',
+        hover_data={'visit_count': True, 'lat': False, 'lon': False},
+        color='visit_count',  # Color represents visit count
+        color_continuous_scale='Tropic',
+        width=1200,
+        height=650,
+    )
+
+    # Update layout
+    fig_city.update_layout(
+        mapbox=dict(
+            style='carto-darkmatter',
+            center=dict(lat=-0.789275, lon=113.921327),  # Center map
+            zoom=3.1,
+        ),
+        showlegend=True
+    )
+
+    # Show map in Streamlit
+    st.plotly_chart(fig_city, use_container_width=True,key=4567)
+
+
+with tab5:
 
     interactive_table(dfu,
                       caption='Users',
