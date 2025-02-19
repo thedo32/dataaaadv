@@ -240,10 +240,15 @@ dfh['tanggal'] = dfh['hit_time'].dt.date  # Extract date from datetime
 daily_visits = dfh.groupby('tanggal').size().reset_index(name='visit_count')
 
 
-tab1, tab2, tab3, tab4, tab5 = st.tabs(["Jumlah Kunjungan per Wilayah","Jumlah Kunjungan per Halaman",
-                                        "Jumlah Kunjungan per Referensi Asal", "Jumlah Kunjungan per Tautan Asal",  "Pengguna Terdaftar"])
+# Define tab names
+tabs = ["Jumlah Kunjungan per Wilayah", "Jumlah Kunjungan per Halaman",  "Jumlah Kunjungan Halaman per Referensi Asal",
+         "Jumlah Kunjungan Halaman per Tautan Asal", "Jumlah Kunjungan per Referensi Asal",  "Jumlah Kunjungan per Tautan Asal", "Pengguna Terdaftar"]
 
-with tab1:
+# Add a selectbox to switch between tabs
+selected_tab = st.selectbox("Pilih Data Yang Akan Ditampilkan", tabs,
+                            index=None, placeholder="Pilih Data...",)
+
+if selected_tab == "Jumlah Kunjungan per Wilayah":
     # DAILY TIME ANALYSYS
 
     st.markdown("### Analisa Kunjungan Per Hari Berdasarkan Negara dan Kota")
@@ -552,7 +557,7 @@ with tab1:
 
 
 #kunjungan per halaman
-with tab2:
+elif selected_tab == "Jumlah Kunjungan per Halaman":
 
     # DAILY TIME ANALYSYS
     st.markdown("### Analisa Kunjungan Per Hari Berdasarkan Negara dan Halaman")
@@ -830,8 +835,86 @@ with tab2:
     # Show map in Streamlit
     st.plotly_chart(fig_city, use_container_width=True,key=12345)
 
+elif selected_tab == "Jumlah Kunjungan Halaman per Referensi Asal":
+    #cross analysis page per utm source
+
+    st.markdown("## Kunjungan ke Halaman per Referensi Asal")
+    # Altair Bar Chart
+
+    # filter other or unknown
+    df = dfh[~dfh['title'].isin(["Other", "Unknown", "Login", "Register"])]
+
+    # filter other or unknown
+    df['utm_source'] = df['utm_source'].fillna('Other')
+
+    all_utm = df['utm_source'].unique().tolist()
+
+    selection = alt.selection_point(fields=['utm_source'], bind='legend')
+
+    bars = alt.Chart(df).mark_bar(size=6).encode(
+        x=alt.X(
+            "title:N",
+            title="Judul Halaman per Referensi Asal",
+            axis=alt.Axis(labelAngle=90),
+            sort=alt.EncodingSortField(field="id", op="count", order="descending")
+        ),
+        y=alt.Y("count(id):Q", title="Jumlah Kunjungan"),  # Count occurrences by city
+        xOffset=alt.X("utm_source:N", title="Referensi Asal"),  # Group by country
+        color=alt.Color(
+            "utm_source:N",
+            title="Referensi Asal",
+            scale=alt.Scale(domain=all_utm),  # Explicitly set domain
+            legend=alt.Legend(title="Pilih Referensi")
+        ),  # Different colors for each country
+        tooltip=["utm_source", "title", "count(id)"]  # Add tooltips for interactivity
+    ).add_params(selection).transform_filter(selection).properties(
+        height=800,
+        width=1200
+    ).interactive(bind_x=True, bind_y=True)
+
+    st.altair_chart(bars)
+
+elif selected_tab == "Jumlah Kunjungan Halaman per Tautan Asal":
+    #cross analysis page per utm source
+
+    st.markdown("## Kunjungan ke Halaman per Tautan Asal")
+    # Altair Bar Chart
+
+    # filter other or unknown
+    df = dfh[~dfh['title'].isin(["Other", "Unknown", "Login", "Register"])]
+
+    # filter other or unknown
+    df['referrer'] = df['referrer'].fillna('Other')
+
+    all_referrer = df['referrer'].unique().tolist()
+
+    selection = alt.selection_point(fields=['utm_source'], bind='legend')
+
+    bars = alt.Chart(df).mark_bar(size=6).encode(
+        x=alt.X(
+            "title:N",
+            title="Judul Halaman per Tautan Asal",
+            axis=alt.Axis(labelAngle=90),
+            sort=alt.EncodingSortField(field="id", op="count", order="descending")
+        ),
+        y=alt.Y("count(id):Q", title="Jumlah Kunjungan"),  # Count occurrences by city
+        xOffset=alt.X("utm_source:N", title="Tautan"),  # Group by country
+        color=alt.Color(
+            "utm_source:N",
+            title="Tautan Asal",
+            scale=alt.Scale(domain=all_referrer),  # Explicitly set domain
+            legend=alt.Legend(title="Pilih Tautan Asal")
+        ),  # Different colors for each country
+        tooltip=["referrer", "title", "count(id)"]  # Add tooltips for interactivity
+    ).add_params(selection).transform_filter(selection).properties(
+        height=800,
+        width=1200
+    ).interactive(bind_x=True, bind_y=True)
+
+    st.altair_chart(bars)
+
 #kunjungan per link asal
-with tab3:
+elif selected_tab == "Jumlah Kunjungan per Referensi Asal":
 
     # DAILY TIME ANALYSYS
     st.markdown("### Analisa Kunjungan Per Hari Berdasarkan Referensi Asal dan Negara")
@@ -1121,7 +1204,7 @@ with tab3:
     st.plotly_chart(fig_city, use_container_width=True,key=3456)
 
 #kunjungan per link asal
-with tab4:
+elif selected_tab == "Jumlah Kunjungan per Tautan Asal":
 
     # DAILY TIME ANALYSYS
     st.markdown("### Analisa Kunjungan Per Hari Berdasarkan Tautan Asal dan Negara")
@@ -1410,7 +1493,7 @@ with tab4:
     st.plotly_chart(fig_city, use_container_width=True,key=4567)
 
 
-with tab5:
+elif selected_tab == "Pengguna Terdaftar":
 
     interactive_table(dfu,
                       caption='Users',
